@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'smartActivate' target in the 'smartActivate' project.
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

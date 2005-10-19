@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+<dictionary title="SmartActivate Terminology">
+	<suite name="SmartActivate Suite" code="smAt" description="Things that this addition supports">
+		<command name="ActivateProcess" code="smAtsmAt" description="Activate application with only frontmost window">
+			<direct-parameter description="process name" type="text" optional="yes"/>
+			<parameter name="creatorType" code="cTyp" description="creator type of process" type="text" optional="yes"/>
+			<result description="true if successed to activate process, " type="boolean"/>
+		</command>
+	</suite>
+</dictionary>
