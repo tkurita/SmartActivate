@@ -4,7 +4,7 @@
 #define useLog 0
 
 void usage() {
-	printf("Usage: [-t] [creatorType] [process name]\n");
+	printf("Usage: [-t] [creator type] [-i] [bundle identifier] [process name]\n");
 	exit(-1);
 }
 
@@ -12,11 +12,9 @@ extern char *optarg;
 extern int optind, opterr, optopt;
 
 int main (int argc, char * const argv[]) {
-	if (argc > 4) {
+	if (argc > 6) {
 		// too many arguments
-#if useLog
-		NSLog(@"too many arguments");
-#endif
+		printf("Too many arguments.\n");
 		usage();
 	}
 
@@ -32,14 +30,19 @@ int main (int argc, char * const argv[]) {
 	/* get arguments */
 	NSString *targetCreator = nil;
 	NSString *targetName = nil;
+	NSString *targetIdentifier = nil;
 	
-	while(getopt(argc, argv, "t:") != -1 ){
+	while(getopt(argc, argv, "t:i:") != -1 ){
 		switch(optopt){
 			case 't': 
 				targetCreator = [NSString stringWithCString:optarg];
 				break;
+			case 'i': 
+				targetIdentifier = [NSString stringWithCString:optarg];
+				break;				
 			case '?':
 			default	:
+				printf("There is unknown option.\n");
 				usage(); break;
 		}
 		optarg	=	NULL;
@@ -57,7 +60,7 @@ int main (int argc, char * const argv[]) {
 	NSLog(targetName);
 #endif
 	
-	BOOL isSuccess = [SmartActivate activateAppOfType:targetCreator processName:targetName];
+	BOOL isSuccess = [SmartActivate activateAppOfType:targetCreator processName:targetName identifier:targetIdentifier];
     [pool release];
 	
 	if (isSuccess)

@@ -6,7 +6,7 @@
 
 }
 
-+(BOOL)activateAppOfType:(NSString *)targetCreator processName:(NSString*)targetName;
++(BOOL)activateAppOfType:(NSString *)targetCreator processName:(NSString*)targetName identifier:(NSString*)targetIdentifier;
 +(BOOL)activateAppOfType:(NSString *)targetCreator;
 +(BOOL)activateAppOfName:(NSString *)targetName;
 

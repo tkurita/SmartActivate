@@ -84,6 +84,8 @@ OSErr MyEventHandler(const AppleEvent *ev, AppleEvent *reply, long refcon)
 #endif
 	NSString *targetCreator = nil;
 	NSString *targetName = nil;
+	NSString *targetIdentifier = nil;
+	
 	AppleEvent newEv;
 	err = AEDuplicateDesc(ev,&newEv);
 	NSAppleEventDescriptor *aEvent = [[[NSAppleEventDescriptor alloc] initWithAEDescNoCopy:&newEv] autorelease];
@@ -93,6 +95,14 @@ OSErr MyEventHandler(const AppleEvent *ev, AppleEvent *reply, long refcon)
 		NSLog([creatorDsc stringValue]);
 #endif		
 		targetCreator = [creatorDsc stringValue];
+	}
+
+	NSAppleEventDescriptor *identifierDsc = [aEvent paramDescriptorForKeyword:'buID'];
+	if (identifierDsc != nil) {
+#if useLog
+		NSLog([creatorDsc stringValue]);
+#endif		
+		targetIdentifier = [identifierDsc stringValue];
 	}
 	
 	NSAppleEventDescriptor *dParamDsc = [aEvent paramDescriptorForKeyword:keyDirectObject];
@@ -104,8 +114,8 @@ OSErr MyEventHandler(const AppleEvent *ev, AppleEvent *reply, long refcon)
 	}
 	
 	BOOL isSuccess = NO;
-	if (targetName || targetCreator) {
-		isSuccess = [SmartActivate activateAppOfType:targetCreator processName:targetName];
+	if (targetName || targetCreator || targetIdentifier) {
+		isSuccess = [SmartActivate activateAppOfType:targetCreator processName:targetName identifier:targetIdentifier];
 		resultCode = noErr;
 	}
 	else {

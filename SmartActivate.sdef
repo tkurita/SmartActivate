@@ -4,7 +4,8 @@
 	<suite name="SmartActivate Suite" code="smAt" description="Things that this addition supports">
 		<command name="ActivateProcess" code="smAtsmAt" description="Activate application with only frontmost window">
 			<direct-parameter description="process name" type="text" optional="yes"/>
-			<parameter name="creatorType" code="cTyp" description="creator type of process" type="text" optional="yes"/>
+			<parameter name="creatorType" code="cTyp" description="creator type of the process" type="text" optional="yes"/>
+			<parameter name="identifier" code="buID" description="Bundle Identifer of the process" type="text" optional="yes"/>
 			<result description="true if successed to activate process, " type="boolean"/>
 		</command>
 	</suite>
