@@ -2,11 +2,11 @@
 <!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
 <dictionary title="SmartActivate Terminology">
 	<suite name="SmartActivate Suite" code="smAt" description="Things that this addition supports">
-		<command name="ActivateProcess" code="smAtsmAt" description="Activate application with only frontmost window">
-			<direct-parameter description="process name" type="text" optional="yes"/>
-			<parameter name="creatorType" code="cTyp" description="creator type of the process" type="text" optional="yes"/>
+		<command name="ActivateProcess" code="smAtsmAt" description="Activate an application process with only font window">
+			<direct-parameter description="process name. The value of &quot;CFBundleName&quot; in info.plist of an application bundle" type="text" optional="yes"/>
+			<parameter name="creatorType" code="cTyp" description="creator type of the process. The value of &quot;CFBundleSignature&quot; in info.plist of an application bundle" type="text" optional="yes"/>
 			<parameter name="identifier" code="buID" description="Bundle Identifer of the process" type="text" optional="yes"/>
-			<result description="true if successed to activate process, " type="boolean"/>
+			<result description="true if successed to activate specified process." type="boolean"/>
 		</command>
 	</suite>
 </dictionary>

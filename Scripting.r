@@ -23,18 +23,22 @@ resource 'aete' (0, "SmartActivate Terminology") {
 			/* Events */
 
 			"ActivateProcess",
-			"Activate application with only frontmost window",
+			"Activate an application process with only font window",
 			'smAt', 'smAt',
 			'bool',
-			"true if successed to activate process, ",
+			"true if successed to activate specified process.",
 			replyRequired, singleItem, notEnumerated, Reserved13,
 			'TEXT',
-			"process name",
+			"process name. The value of \"CFBundleName\" in info.plist of an application bundle",
 			directParamOptional,
 			singleItem, notEnumerated, Reserved13,
 			{
 				"creatorType", 'cTyp', 'TEXT',
-				"creator type of process",
+				"creator type of the process. The value of \"CFBundleSignature\" in info.plist of an application bundle",
+				optional,
+				singleItem, notEnumerated, Reserved13,
+				"identifier", 'buID', 'TEXT',
+				"Bundle Identifer of the process",
 				optional,
 				singleItem, notEnumerated, Reserved13
 			}
