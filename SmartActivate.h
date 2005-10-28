@@ -2,6 +2,8 @@
 #include <ApplicationServices/ApplicationServices.h>
 #include <IOKit/IOCFBundle.h>
 
+NSDictionary *getProcessInfo(id targetCreator, id targetName, id targetIdentifier);
+
 @interface SmartActivate : NSObject {
 
 }
