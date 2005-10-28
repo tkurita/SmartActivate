@@ -25,16 +25,20 @@ void SATerminate();
 
 EXTERN_C OSErr SAInitialize(CFBundleRef theBundle)
 {
-	/*  Typically, scripting additions either totally succeed to load or totally fail.  This is usually, but not always, the right thing to do -- if you had an addition where part of it relied on a shared library, but part didn't, you might want to run in a reduced mode if the library could not be found. */
-	
+#if useLog
+	printf("start SAInitialize\n");
+#endif	
 	gAdditionBundle = theBundle;  // no retain needed.
 	
 	// Any other setup you need here...
-	if (atexit(SATerminate)) {
+	if (! atexit(SATerminate)) {
 		return InstallMyEventHandlers();
 	}
 	else {
-		return 0;
+#if useLog
+		printf("fail to SAInitialize\n");
+#endif
+		return noErr; //to avoid crash of application
 	}
 }
 
