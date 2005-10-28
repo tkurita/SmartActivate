@@ -4,7 +4,7 @@
 #define useLog 0
 
 void usage() {
-	printf("Usage: [-t] [creator type] [-i] [bundle identifier] [process name]\n");
+	printf("Usage: activate [-t] [Creator Type] [-i] [Bundle Identifier] [Process Name]\n");
 	exit(-1);
 }
 
