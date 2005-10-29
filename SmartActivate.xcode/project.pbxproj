@@ -21,6 +21,7 @@
 		014CEA500018CE4811CA2923 = {
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				ZERO_LINK = NO;
@@ -53,6 +54,7 @@
 				8DD76F960486AA7600D96B5E,
 				2C863A2308FE639D00F73527,
 				2C16528508FF6F38003142E0,
+				2CC10B270912873E006C2EC7,
 			);
 		};
 		08FB7794FE84155DC02AAC07 = {
@@ -70,6 +72,7 @@
 		};
 		08FB7795FE84155DC02AAC07 = {
 			children = (
+				2CC10B18091282E2006C2EC7,
 				2C863ADB08FE66C300F73527,
 				2C0EB20508F2CE6B0091C5CE,
 				2C0EB20608F2CE6B0091C5CE,
@@ -123,6 +126,7 @@
 				8DD76FA10486AA7600D96B5E,
 				2C863A2408FE639D00F73527,
 				2C16528608FF6F38003142E0,
+				2CC10B280912873E006C2EC7,
 			);
 			isa = PBXGroup;
 			name = Products;
@@ -154,12 +158,6 @@
 			path = SmartActivate.m;
 			refType = 4;
 			sourceTree = "<group>";
-		};
-		2C0EB20708F2CE6B0091C5CE = {
-			fileRef = 2C0EB20508F2CE6B0091C5CE;
-			isa = PBXBuildFile;
-			settings = {
-			};
 		};
 		2C0EB20808F2CE6B0091C5CE = {
 			fileRef = 2C0EB20608F2CE6B0091C5CE;
@@ -270,10 +268,9 @@
 			isa = PBXFileReference;
 			lastKnownFileType = text.xml;
 			lineEnding = 0;
-			name = "SmartActivateApp-Info.plist";
-			path = "/Users/tkurita/Factories/Cocoa/Projects/SmartActivate/SmartActivateApp-Info.plist";
-			refType = 0;
-			sourceTree = "<absolute>";
+			path = "SmartActivateApp-Info.plist";
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
 		};
 		2C16528C08FF7003003142E0 = {
 			fileRef = 2C863ADB08FE66C300F73527;
@@ -409,10 +406,9 @@
 			fileEncoding = 4;
 			isa = PBXFileReference;
 			lastKnownFileType = text.xml;
-			name = Info.plist;
-			path = /Users/tkurita/Factories/Cocoa/Projects/SmartActivate/Info.plist;
-			refType = 0;
-			sourceTree = "<absolute>";
+			path = Info.plist;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
 		};
 		2C863A5B08FE656100F73527 = {
 			fileRef = 08FB779EFE84155DC02AAC07;
@@ -509,6 +505,89 @@
 			refType = 4;
 			sourceTree = "<group>";
 		};
+		2CC10B18091282E2006C2EC7 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = mainFindProcess.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		2CC10B250912873E006C2EC7 = {
+			buildActionMask = 2147483647;
+			files = (
+				2CC10B4609128960006C2EC7,
+				2CC10B2A0912875C006C2EC7,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CC10B260912873E006C2EC7 = {
+			buildActionMask = 2147483647;
+			files = (
+				2CC10BB50912897C006C2EC7,
+				2CC10BB409128978006C2EC7,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CC10B270912873E006C2EC7 = {
+			buildPhases = (
+				2CC10B250912873E006C2EC7,
+				2CC10B260912873E006C2EC7,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				INSTALL_PATH = /usr/local/bin;
+				OPTIMIZATION_CFLAGS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = findProcess;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+			};
+			dependencies = (
+			);
+			isa = PBXNativeTarget;
+			name = findProcess;
+			productName = findProcess;
+			productReference = 2CC10B280912873E006C2EC7;
+			productType = "com.apple.product-type.tool";
+		};
+		2CC10B280912873E006C2EC7 = {
+			explicitFileType = "compiled.mach-o.executable";
+			includeInIndex = 0;
+			isa = PBXFileReference;
+			path = findProcess;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2CC10B2A0912875C006C2EC7 = {
+			fileRef = 2C0EB20608F2CE6B0091C5CE;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		2CC10B4609128960006C2EC7 = {
+			fileRef = 2CC10B18091282E2006C2EC7;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		2CC10BB409128978006C2EC7 = {
+			fileRef = 08FB779EFE84155DC02AAC07;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		2CC10BB50912897C006C2EC7 = {
+			fileRef = 2C0EB30908F2E32C0091C5CE;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
 //2C0
 //2C1
 //2C2
@@ -599,7 +678,6 @@
 			dstSubfolderSpec = 0;
 			files = (
 				8DD76F9F0486AA7600D96B5E,
-				2C0EB20708F2CE6B0091C5CE,
 			);
 			isa = PBXCopyFilesBuildPhase;
 			runOnlyForDeploymentPostprocessing = 1;
