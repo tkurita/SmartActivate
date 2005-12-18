@@ -21,7 +21,7 @@
 #define useLog 0
 
 void usage() {
-	printf("Usage: activate [-t] [Creator Type] [-i] [Bundle Identifier] [Process Name]\n");
+	printf("Usage: activate [-t creator_type] [-i bundle_identifier] [process_name]\n");
 }
 
 void showHelp() {
