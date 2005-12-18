@@ -1,0 +1,820 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C0EB20808F2CE6B0091C5CE /* SmartActivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0EB20608F2CE6B0091C5CE /* SmartActivate.m */; };
+		2C0EB30A08F2E32C0091C5CE /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0EB30908F2E32C0091C5CE /* ApplicationServices.framework */; };
+		2C16528C08FF7003003142E0 /* mainOSAX.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C863ADB08FE66C300F73527 /* mainOSAX.m */; };
+		2C16528D08FF7003003142E0 /* SmartActivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0EB20608F2CE6B0091C5CE /* SmartActivate.m */; };
+		2C16544808FF7014003142E0 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C863B9908FE6A0400F73527 /* Carbon.framework */; };
+		2C16544908FF7014003142E0 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0EB30908F2E32C0091C5CE /* ApplicationServices.framework */; };
+		2C16544A08FF7014003142E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
+		2C16545008FF7051003142E0 /* Scripting.r in Rez */ = {isa = PBXBuildFile; fileRef = 2C863BCA08FE6CE200F73527 /* Scripting.r */; };
+		2C863A5B08FE656100F73527 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
+		2C863AC908FE656300F73527 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0EB30908F2E32C0091C5CE /* ApplicationServices.framework */; };
+		2C863ACA08FE656A00F73527 /* SmartActivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0EB20608F2CE6B0091C5CE /* SmartActivate.m */; };
+		2C863ADC08FE66C300F73527 /* mainOSAX.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C863ADB08FE66C300F73527 /* mainOSAX.m */; };
+		2C863B9A08FE6A0400F73527 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C863B9908FE6A0400F73527 /* Carbon.framework */; };
+		2C863BCB08FE6CE200F73527 /* Scripting.r in Rez */ = {isa = PBXBuildFile; fileRef = 2C863BCA08FE6CE200F73527 /* Scripting.r */; };
+		2CC10B2A0912875C006C2EC7 /* SmartActivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0EB20608F2CE6B0091C5CE /* SmartActivate.m */; };
+		2CC10B4609128960006C2EC7 /* mainFindProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC10B18091282E2006C2EC7 /* mainFindProcess.m */; };
+		2CC10BB409128978006C2EC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
+		2CC10BB50912897C006C2EC7 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0EB30908F2E32C0091C5CE /* ApplicationServices.framework */; };
+		8DD76F9A0486AA7600D96B5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
+		8DD76F9F0486AA7600D96B5E /* activate.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859EA3029092ED04C91782 /* activate.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		014CEA4F0018CE4811CA2923 /* Development */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		014CEA500018CE4811CA2923 /* Deployment */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD76F9E0486AA7600D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				8DD76F9F0486AA7600D96B5E /* activate.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08FB7796FE84155DC02AAC07 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		08FB779EFE84155DC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		2C0EB20508F2CE6B0091C5CE /* SmartActivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartActivate.h; sourceTree = "<group>"; };
+		2C0EB20608F2CE6B0091C5CE /* SmartActivate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartActivate.m; sourceTree = "<group>"; };
+		2C0EB30908F2E32C0091C5CE /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
+		2C16528608FF6F38003142E0 /* SmartActivateApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartActivateApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C16528808FF6F38003142E0 /* SmartActivateApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; lineEnding = 0; path = "SmartActivateApp-Info.plist"; sourceTree = SOURCE_ROOT; };
+		2C863A2408FE639D00F73527 /* SmartActivate.osax */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartActivate.osax; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C863A2508FE639D00F73527 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		2C863ADB08FE66C300F73527 /* mainOSAX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainOSAX.m; sourceTree = "<group>"; };
+		2C863B9908FE6A0400F73527 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		2C863BB908FE6C1A00F73527 /* SmartActivate.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SmartActivate.sdef; sourceTree = "<group>"; };
+		2C863BCA08FE6CE200F73527 /* Scripting.r */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.rez; path = Scripting.r; sourceTree = "<group>"; };
+		2CC10B18091282E2006C2EC7 /* mainFindProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainFindProcess.m; sourceTree = "<group>"; };
+		2CC10B280912873E006C2EC7 /* findProcess */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = findProcess; sourceTree = BUILT_PRODUCTS_DIR; };
+		32A70AAB03705E1F00C91783 /* SmartActivate_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartActivate_Prefix.pch; sourceTree = "<group>"; };
+		8DD76FA10486AA7600D96B5E /* activate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = activate; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6859EA3029092ED04C91782 /* activate.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = activate.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C16528408FF6F38003142E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C16544808FF7014003142E0 /* Carbon.framework in Frameworks */,
+				2C16544908FF7014003142E0 /* ApplicationServices.framework in Frameworks */,
+				2C16544A08FF7014003142E0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C863A2208FE639D00F73527 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C863AC908FE656300F73527 /* ApplicationServices.framework in Frameworks */,
+				2C863A5B08FE656100F73527 /* Foundation.framework in Frameworks */,
+				2C863B9A08FE6A0400F73527 /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CC10B260912873E006C2EC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CC10BB50912897C006C2EC7 /* ApplicationServices.framework in Frameworks */,
+				2CC10BB409128978006C2EC7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DD76F9B0486AA7600D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */,
+				2C0EB30A08F2E32C0091C5CE /* ApplicationServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* smartActivate */ = {
+			isa = PBXGroup;
+			children = (
+				2C863BCC08FE6CEE00F73527 /* Resources */,
+				08FB7795FE84155DC02AAC07 /* Source */,
+				C6859EA2029092E104C91782 /* Documentation */,
+				08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = smartActivate;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2CC10B18091282E2006C2EC7 /* mainFindProcess.m */,
+				2C863ADB08FE66C300F73527 /* mainOSAX.m */,
+				2C0EB20508F2CE6B0091C5CE /* SmartActivate.h */,
+				2C0EB20608F2CE6B0091C5CE /* SmartActivate.m */,
+				32A70AAB03705E1F00C91783 /* SmartActivate_Prefix.pch */,
+				08FB7796FE84155DC02AAC07 /* main.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				2C863B9908FE6A0400F73527 /* Carbon.framework */,
+				2C0EB30908F2E32C0091C5CE /* ApplicationServices.framework */,
+				08FB779EFE84155DC02AAC07 /* Foundation.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76FA10486AA7600D96B5E /* activate */,
+				2C863A2408FE639D00F73527 /* SmartActivate.osax */,
+				2C16528608FF6F38003142E0 /* SmartActivateApp.app */,
+				2CC10B280912873E006C2EC7 /* findProcess */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C863BCC08FE6CEE00F73527 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2C863A2508FE639D00F73527 /* Info.plist */,
+				2C16528808FF6F38003142E0 /* SmartActivateApp-Info.plist */,
+				2C863BCA08FE6CE200F73527 /* Scripting.r */,
+				2C863BB908FE6C1A00F73527 /* SmartActivate.sdef */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C6859EA2029092E104C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				C6859EA3029092ED04C91782 /* activate.1 */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2C863AD408FE65A900F73527 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2C16528508FF6F38003142E0 /* SmartActivateApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C494A700946E56C008820F6 /* Build configuration list for PBXNativeTarget "SmartActivateApp" */;
+			buildPhases = (
+				2C16528208FF6F38003142E0 /* Resources */,
+				2C16528308FF6F38003142E0 /* Sources */,
+				2C16528408FF6F38003142E0 /* Frameworks */,
+				2C16544F08FF7047003142E0 /* Rez */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				INFOPLIST_FILE = "SmartActivateApp-Info.plist";
+				INSTALL_PATH = "$(USER_APPS_DIR)";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SmartActivateApp;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			dependencies = (
+			);
+			name = SmartActivateApp;
+			productName = SmartActivateApp;
+			productReference = 2C16528608FF6F38003142E0 /* SmartActivateApp.app */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>ﾇPRODUCTNAMEﾈ</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.yourcompany.ﾇTARGETNAMEASIDENTIFIERﾈ</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+</dict>
+</plist>
+";
+			productType = "com.apple.product-type.application";
+		};
+		2C863A2308FE639D00F73527 /* SmartActivate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C494A6C0946E56C008820F6 /* Build configuration list for PBXNativeTarget "SmartActivate" */;
+			buildPhases = (
+				2C863AD408FE65A900F73527 /* Headers */,
+				2C863A2008FE639D00F73527 /* Resources */,
+				2C863A2108FE639D00F73527 /* Sources */,
+				2C863A2208FE639D00F73527 /* Frameworks */,
+				2C863ACD08FE658900F73527 /* Rez */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SmartActivate_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/ScriptingAdditions";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SmartActivate;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = osax;
+			};
+			dependencies = (
+			);
+			name = SmartActivate;
+			productName = SmartActivate.osax;
+			productReference = 2C863A2408FE639D00F73527 /* SmartActivate.osax */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>ﾇPRODUCTNAMEﾈ</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.yourcompany.ﾇTARGETNAMEASIDENTIFIERﾈ</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+</dict>
+</plist>
+";
+			productType = "com.apple.product-type.bundle";
+		};
+		2CC10B270912873E006C2EC7 /* findProcess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C494A740946E56C008820F6 /* Build configuration list for PBXNativeTarget "findProcess" */;
+			buildPhases = (
+				2CC10B250912873E006C2EC7 /* Sources */,
+				2CC10B260912873E006C2EC7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				INSTALL_PATH = /usr/local/bin;
+				OPTIMIZATION_CFLAGS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = findProcess;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			dependencies = (
+			);
+			name = findProcess;
+			productName = findProcess;
+			productReference = 2CC10B280912873E006C2EC7 /* findProcess */;
+			productType = "com.apple.product-type.tool";
+		};
+		8DD76F960486AA7600D96B5E /* activate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C494A680946E56C008820F6 /* Build configuration list for PBXNativeTarget "activate" */;
+			buildPhases = (
+				8DD76F990486AA7600D96B5E /* Sources */,
+				8DD76F9B0486AA7600D96B5E /* Frameworks */,
+				8DD76F9E0486AA7600D96B5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SmartActivate_Prefix.pch;
+				INSTALL_PATH = "$(HOME)/bin";
+				PRODUCT_NAME = activate;
+			};
+			dependencies = (
+			);
+			name = activate;
+			productInstallPath = "$(HOME)/bin";
+			productName = smartActivate;
+			productReference = 8DD76FA10486AA7600D96B5E /* activate */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 2C494A780946E56C008820F6 /* Build configuration list for PBXProject "SmartActivate" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				014CEA4F0018CE4811CA2923 /* Development */,
+				014CEA500018CE4811CA2923 /* Deployment */,
+			);
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07 /* smartActivate */;
+			projectDirPath = "";
+			targets = (
+				8DD76F960486AA7600D96B5E /* activate */,
+				2C863A2308FE639D00F73527 /* SmartActivate */,
+				2C16528508FF6F38003142E0 /* SmartActivateApp */,
+				2CC10B270912873E006C2EC7 /* findProcess */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C16528208FF6F38003142E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C863A2008FE639D00F73527 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		2C16544F08FF7047003142E0 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C16545008FF7051003142E0 /* Scripting.r in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C863ACD08FE658900F73527 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C863BCB08FE6CE200F73527 /* Scripting.r in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C16528308FF6F38003142E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C16528C08FF7003003142E0 /* mainOSAX.m in Sources */,
+				2C16528D08FF7003003142E0 /* SmartActivate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C863A2108FE639D00F73527 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C863ACA08FE656A00F73527 /* SmartActivate.m in Sources */,
+				2C863ADC08FE66C300F73527 /* mainOSAX.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CC10B250912873E006C2EC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CC10B4609128960006C2EC7 /* mainFindProcess.m in Sources */,
+				2CC10B2A0912875C006C2EC7 /* SmartActivate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DD76F990486AA7600D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DD76F9A0486AA7600D96B5E /* main.m in Sources */,
+				2C0EB20808F2CE6B0091C5CE /* SmartActivate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2C494A690946E56C008820F6 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SmartActivate_Prefix.pch;
+				INSTALL_PATH = "$(HOME)/bin";
+				PRODUCT_NAME = activate;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		2C494A6A0946E56C008820F6 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SmartActivate_Prefix.pch;
+				INSTALL_PATH = "$(HOME)/bin";
+				PRODUCT_NAME = activate;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		2C494A6B0946E56C008820F6 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SmartActivate_Prefix.pch;
+				INSTALL_PATH = "$(HOME)/bin";
+				PRODUCT_NAME = activate;
+			};
+			name = Default;
+		};
+		2C494A6D0946E56C008820F6 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SmartActivate_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/ScriptingAdditions";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SmartActivate;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = osax;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		2C494A6E0946E56C008820F6 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SmartActivate_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/ScriptingAdditions";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SmartActivate;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = osax;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		2C494A6F0946E56C008820F6 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SmartActivate_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/ScriptingAdditions";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SmartActivate;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = osax;
+			};
+			name = Default;
+		};
+		2C494A710946E56C008820F6 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				INFOPLIST_FILE = "SmartActivateApp-Info.plist";
+				INSTALL_PATH = "$(USER_APPS_DIR)";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SmartActivateApp;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		2C494A720946E56C008820F6 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				INFOPLIST_FILE = "SmartActivateApp-Info.plist";
+				INSTALL_PATH = "$(USER_APPS_DIR)";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SmartActivateApp;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		2C494A730946E56C008820F6 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				INFOPLIST_FILE = "SmartActivateApp-Info.plist";
+				INSTALL_PATH = "$(USER_APPS_DIR)";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SmartActivateApp;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		2C494A750946E56C008820F6 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = findProcess;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		2C494A760946E56C008820F6 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = findProcess;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		2C494A770946E56C008820F6 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = findProcess;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		2C494A790946E56C008820F6 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Development;
+		};
+		2C494A7A0946E56C008820F6 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Deployment;
+		};
+		2C494A7B0946E56C008820F6 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C494A680946E56C008820F6 /* Build configuration list for PBXNativeTarget "activate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C494A690946E56C008820F6 /* Development */,
+				2C494A6A0946E56C008820F6 /* Deployment */,
+				2C494A6B0946E56C008820F6 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		2C494A6C0946E56C008820F6 /* Build configuration list for PBXNativeTarget "SmartActivate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C494A6D0946E56C008820F6 /* Development */,
+				2C494A6E0946E56C008820F6 /* Deployment */,
+				2C494A6F0946E56C008820F6 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		2C494A700946E56C008820F6 /* Build configuration list for PBXNativeTarget "SmartActivateApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C494A710946E56C008820F6 /* Development */,
+				2C494A720946E56C008820F6 /* Deployment */,
+				2C494A730946E56C008820F6 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		2C494A740946E56C008820F6 /* Build configuration list for PBXNativeTarget "findProcess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C494A750946E56C008820F6 /* Development */,
+				2C494A760946E56C008820F6 /* Deployment */,
+				2C494A770946E56C008820F6 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		2C494A780946E56C008820F6 /* Build configuration list for PBXProject "SmartActivate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C494A790946E56C008820F6 /* Development */,
+				2C494A7A0946E56C008820F6 /* Deployment */,
+				2C494A7B0946E56C008820F6 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
