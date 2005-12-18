@@ -20,8 +20,6 @@
 This command activate a macintosh application proceess with bginging only one window.
 .Pp \" Inserts a space
 An appllication process is specified with following arguments:
-.Pp \" Inserts a space
-A list of flags and their descriptions:
 .Bl -tag -width -indent  \" Begins a tagged list
 .It Fl t\ \&creator_type                 \"-t creator_type as a list item
 spefifies the creator type  for the application to activate. The creator type is the value of CFBundleSignagure of an application bundle.
@@ -30,6 +28,8 @@ spcifies the bundle identifier for the application to activate. The bundle ident
 .It process_name
 specifies the process name  for the application to activate, which is usually the name of then application process shown in menu bar.
 .El                      \" Ends the list
+.Pp
+One of the above argument is required. If arguments more than one is given, activate an application process to meet all given conditions.
 .Sh AUTHOR
 Tetsuro KURITA, <tkurita@mac.com>
 
