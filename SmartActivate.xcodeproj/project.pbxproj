@@ -61,7 +61,7 @@
 		8DD76F9E0486AA7600D96B5E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 8;
-			dstPath = /usr/share/man/man1/;
+			dstPath = $HOME/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
 				8DD76F9F0486AA7600D96B5E /* activate.1 in CopyFiles */,
@@ -746,18 +746,21 @@
 		2C494A790946E56C008820F6 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = c99;
 			};
 			name = Development;
 		};
 		2C494A7A0946E56C008820F6 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = c99;
 			};
 			name = Deployment;
 		};
 		2C494A7B0946E56C008820F6 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = c99;
 			};
 			name = Default;
 		};
