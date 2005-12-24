@@ -36,7 +36,7 @@ NSDictionary *getProcessInfo(id targetCreator, id targetName, id targetIdentifie
 	
 	BOOL isFound = NO;
 	ProcessSerialNumber psn = {kNoProcess, kNoProcess};
-	NSDictionary *pDict;
+	NSDictionary *pDict = nil;
 
 	OSErr err = GetNextProcess(&psn);
 	while( err == noErr) {
