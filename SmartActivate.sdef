@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
 <dictionary title="SmartActivate Terminology">
-	<suite name="SmartActivate Suite" code="smAt" description="Things that this addition supports">
+	<suite name="SmartActivate Suite" code="smAt" description="Activate specified application with a smart way.">
 		<command name="ActivateProcess" code="smAtsmAt" description="Activate an application process with only font window">
 			<direct-parameter description="process name. The value of &quot;CFBundleName&quot; in info.plist of an application bundle" type="text" optional="yes"/>
 			<parameter name="creatorType" code="cTyp" description="creator type of the process. The value of &quot;CFBundleSignature&quot; in info.plist of an application bundle" type="text" optional="yes"/>
