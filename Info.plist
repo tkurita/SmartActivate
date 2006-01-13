@@ -13,14 +13,12 @@
 	<key>CFBundlePackageType</key>
 	<string>osax</string>
 	<key>CFBundleSignature</key>
-	<string>osax</string>
+	<string>ascr</string>
+	<key>CFBundleGetInfoString</key>
+	<string>1.0.1 copyright 2005-2006, Tetsuro KURITA</string>
 	<key>CFBundleVersion</key>
-	<string>1.0</string>
+	<string>1.0.1</string>
 	<key>CSResourcesFileMapped</key>
 	<true/>
-	<key>CFBundleGetInfoString</key>
-	<string>1.0 copyright 2005, Tetsuro KURITA</string>
-	<key>CFBundleVersion</key>
-	<string>1.0</string>
 </dict>
 </plist>
