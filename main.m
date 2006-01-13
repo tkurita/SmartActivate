@@ -1,5 +1,5 @@
 //activate -- activate an application process with bringing only one window to frontmost.
-//Copyright (C) 2005  Tetsuro KURITA <tkurita@mac.com>
+//Copyright (C) 2005-2006  Tetsuro KURITA <tkurita@mac.com>
 //
 //This program is free software; you can redistribute it and/or
 //modify it under the terms of the GNU General Public License
@@ -35,7 +35,7 @@ void showHelp() {
 }
 
 void showVersion() {
-	printf("activate 1.0 copyright 2005, Tetsuro KURITA\n");
+	printf("activate 1.0.1 copyright 2005-2006, Tetsuro KURITA\n");
 }
 
 int main (int argc, char * const argv[]) {
