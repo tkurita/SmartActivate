@@ -15,7 +15,7 @@ resource 'aete' (0, "SmartActivate Terminology") {
 	roman,
 	{
 		"SmartActivate Suite",
-		"Things that this addition supports",
+		"Activate specified application with a smart way.",
 		'smAt',
 		1,
 		1,
