@@ -276,13 +276,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>5</integer>
-									<integer>1</integer>
+									<integer>9</integer>
+									<integer>6</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {264, 755}}</string>
+							<string>{{0, 0}, {264, 762}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -294,7 +294,7 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {281, 773}}</string>
+						<string>{{0, 0}, {281, 780}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>SCMStatusColumn</string>
@@ -303,7 +303,7 @@
 							<real>242</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>224 124 804 814 0 0 1440 938 </string>
+						<string>224 117 959 821 0 0 1440 938 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -319,7 +319,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>SmartActivate.sdef</string>
+								<string>mainOSAX.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -327,17 +327,18 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>SmartActivate.sdef</string>
+										<string>mainOSAX.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>2C1DAED509F6062600139324</string>
+										<string>2C1DAEEA09F60AB000139324</string>
 										<key>history</key>
 										<array>
 											<string>2C864407095DA64C00E2C27E</string>
 											<string>2C864408095DA64C00E2C27E</string>
 											<string>2C1DAED209F6062600139324</string>
-											<string>2C1DAED309F6062600139324</string>
+											<string>2C1DAEE709F60AB000139324</string>
+											<string>2C1DAEE809F60AB000139324</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -352,6 +353,7 @@
 											<string>2C86440D095DA64C00E2C27E</string>
 											<string>2C86440E095DA64C00E2C27E</string>
 											<string>2C1DAED409F6062600139324</string>
+											<string>2C1DAEE909F60AB000139324</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -363,14 +365,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {518, 721}}</string>
+								<string>{{0, 0}, {673, 728}}</string>
 								<key>RubberWindowFrame</key>
-								<string>224 124 804 814 0 0 1440 938 </string>
+								<string>224 117 959 821 0 0 1440 938 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>721pt</string>
+							<string>728pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -383,9 +385,9 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 726}, {518, 47}}</string>
+								<string>{{0, 733}, {673, 47}}</string>
 								<key>RubberWindowFrame</key>
-								<string>224 124 804 814 0 0 1440 938 </string>
+								<string>224 117 959 821 0 0 1440 938 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -394,7 +396,7 @@
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>518pt</string>
+					<string>673pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -549,7 +551,7 @@
 		<string>/Users/tkurita/Factories/Cocoa/Projects/SmartActivate/trunk/SmartActivate.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>224 124 804 814 0 0 1440 938 </string>
+	<string>224 117 959 821 0 0 1440 938 </string>
 	<key>WindowTools</key>
 	<array>
 		<dict>
