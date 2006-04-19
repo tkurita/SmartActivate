@@ -22,7 +22,7 @@ resource 'aete' (0, "SmartActivate Terminology") {
 		{
 			/* Events */
 
-			"ActivateProcess",
+			"activate process",
 			"Activate an application process with only font window",
 			'smAt', 'smAt',
 			'bool',
