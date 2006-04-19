@@ -15,6 +15,10 @@
 		2C16544908FF7014003142E0 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0EB30908F2E32C0091C5CE /* ApplicationServices.framework */; };
 		2C16544A08FF7014003142E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
 		2C16545008FF7051003142E0 /* Scripting.r in Rez */ = {isa = PBXBuildFile; fileRef = 2C863BCA08FE6CE200F73527 /* Scripting.r */; };
+		2C1DAEC309F605B700139324 /* SmartActivate.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C1DAEC209F605B700139324 /* SmartActivate.c */; };
+		2C1DAEC409F605B700139324 /* SmartActivate.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C1DAEC209F605B700139324 /* SmartActivate.c */; };
+		2C1DAEC509F605B700139324 /* SmartActivate.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C1DAEC209F605B700139324 /* SmartActivate.c */; };
+		2C1DAEC609F605B700139324 /* SmartActivate.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C1DAEC209F605B700139324 /* SmartActivate.c */; };
 		2C863A5B08FE656100F73527 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
 		2C863AC908FE656300F73527 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0EB30908F2E32C0091C5CE /* ApplicationServices.framework */; };
 		2C863ACA08FE656A00F73527 /* SmartActivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0EB20608F2CE6B0091C5CE /* SmartActivate.m */; };
@@ -78,6 +82,7 @@
 		2C0EB30908F2E32C0091C5CE /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
 		2C16528608FF6F38003142E0 /* SmartActivateApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartActivateApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C16528808FF6F38003142E0 /* SmartActivateApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; lineEnding = 0; path = "SmartActivateApp-Info.plist"; sourceTree = SOURCE_ROOT; };
+		2C1DAEC209F605B700139324 /* SmartActivate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SmartActivate.c; sourceTree = "<group>"; };
 		2C863A2408FE639D00F73527 /* SmartActivate.osax */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartActivate.osax; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C863A2508FE639D00F73527 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		2C863ADB08FE66C300F73527 /* mainOSAX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainOSAX.m; sourceTree = "<group>"; };
@@ -87,7 +92,7 @@
 		2CC10B18091282E2006C2EC7 /* mainFindProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainFindProcess.m; sourceTree = "<group>"; };
 		2CC10B280912873E006C2EC7 /* findProcess */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = findProcess; sourceTree = BUILT_PRODUCTS_DIR; };
 		32A70AAB03705E1F00C91783 /* SmartActivate_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartActivate_Prefix.pch; sourceTree = "<group>"; };
-		8DD76FA10486AA7600D96B5E /* activate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = activate; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DD76FA10486AA7600D96B5E /* activate */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "compiled.mach-o.executable"; path = activate; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6859EA3029092ED04C91782 /* activate.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = activate.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				2CC10B18091282E2006C2EC7 /* mainFindProcess.m */,
+				2C1DAEC209F605B700139324 /* SmartActivate.c */,
 				2C863ADB08FE66C300F73527 /* mainOSAX.m */,
 				2C0EB20508F2CE6B0091C5CE /* SmartActivate.h */,
 				2C0EB20608F2CE6B0091C5CE /* SmartActivate.m */,
@@ -448,6 +454,7 @@
 			files = (
 				2C16528C08FF7003003142E0 /* mainOSAX.m in Sources */,
 				2C16528D08FF7003003142E0 /* SmartActivate.m in Sources */,
+				2C1DAEC509F605B700139324 /* SmartActivate.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +464,7 @@
 			files = (
 				2C863ACA08FE656A00F73527 /* SmartActivate.m in Sources */,
 				2C863ADC08FE66C300F73527 /* mainOSAX.m in Sources */,
+				2C1DAEC309F605B700139324 /* SmartActivate.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +474,7 @@
 			files = (
 				2CC10B4609128960006C2EC7 /* mainFindProcess.m in Sources */,
 				2CC10B2A0912875C006C2EC7 /* SmartActivate.m in Sources */,
+				2C1DAEC609F605B700139324 /* SmartActivate.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,13 +484,14 @@
 			files = (
 				8DD76F9A0486AA7600D96B5E /* main.m in Sources */,
 				2C0EB20808F2CE6B0091C5CE /* SmartActivate.m in Sources */,
+				2C1DAEC409F605B700139324 /* SmartActivate.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		2C494A690946E56C008820F6 /* Development */ = {
+		2C494A690946E56C008820F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -496,9 +506,9 @@
 				PRODUCT_NAME = activate;
 				ZERO_LINK = YES;
 			};
-			name = Development;
+			name = Debug;
 		};
-		2C494A6A0946E56C008820F6 /* Deployment */ = {
+		2C494A6A0946E56C008820F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -511,7 +521,7 @@
 				PRODUCT_NAME = activate;
 				ZERO_LINK = NO;
 			};
-			name = Deployment;
+			name = Release;
 		};
 		2C494A6B0946E56C008820F6 /* Default */ = {
 			isa = XCBuildConfiguration;
@@ -525,7 +535,7 @@
 			};
 			name = Default;
 		};
-		2C494A6D0946E56C008820F6 /* Development */ = {
+		2C494A6D0946E56C008820F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -551,9 +561,9 @@
 				WRAPPER_EXTENSION = osax;
 				ZERO_LINK = YES;
 			};
-			name = Development;
+			name = Debug;
 		};
-		2C494A6E0946E56C008820F6 /* Deployment */ = {
+		2C494A6E0946E56C008820F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -577,7 +587,7 @@
 				WRAPPER_EXTENSION = osax;
 				ZERO_LINK = NO;
 			};
-			name = Deployment;
+			name = Release;
 		};
 		2C494A6F0946E56C008820F6 /* Default */ = {
 			isa = XCBuildConfiguration;
@@ -601,7 +611,7 @@
 			};
 			name = Default;
 		};
-		2C494A710946E56C008820F6 /* Development */ = {
+		2C494A710946E56C008820F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -629,9 +639,9 @@
 				);
 				ZERO_LINK = YES;
 			};
-			name = Development;
+			name = Debug;
 		};
-		2C494A720946E56C008820F6 /* Deployment */ = {
+		2C494A720946E56C008820F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -657,7 +667,7 @@
 				);
 				ZERO_LINK = NO;
 			};
-			name = Deployment;
+			name = Release;
 		};
 		2C494A730946E56C008820F6 /* Default */ = {
 			isa = XCBuildConfiguration;
@@ -682,7 +692,7 @@
 			};
 			name = Default;
 		};
-		2C494A750946E56C008820F6 /* Development */ = {
+		2C494A750946E56C008820F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -704,9 +714,9 @@
 				);
 				ZERO_LINK = YES;
 			};
-			name = Development;
+			name = Debug;
 		};
-		2C494A760946E56C008820F6 /* Deployment */ = {
+		2C494A760946E56C008820F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -726,7 +736,7 @@
 				);
 				ZERO_LINK = NO;
 			};
-			name = Deployment;
+			name = Release;
 		};
 		2C494A770946E56C008820F6 /* Default */ = {
 			isa = XCBuildConfiguration;
@@ -745,7 +755,7 @@
 			};
 			name = Default;
 		};
-		2C494A790946E56C008820F6 /* Development */ = {
+		2C494A790946E56C008820F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = (
@@ -756,9 +766,9 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
 			};
-			name = Development;
+			name = Debug;
 		};
-		2C494A7A0946E56C008820F6 /* Deployment */ = {
+		2C494A7A0946E56C008820F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = (
@@ -769,7 +779,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
 			};
-			name = Deployment;
+			name = Release;
 		};
 		2C494A7B0946E56C008820F6 /* Default */ = {
 			isa = XCBuildConfiguration;
@@ -790,8 +800,8 @@
 		2C494A680946E56C008820F6 /* Build configuration list for PBXNativeTarget "activate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2C494A690946E56C008820F6 /* Development */,
-				2C494A6A0946E56C008820F6 /* Deployment */,
+				2C494A690946E56C008820F6 /* Debug */,
+				2C494A6A0946E56C008820F6 /* Release */,
 				2C494A6B0946E56C008820F6 /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -800,8 +810,8 @@
 		2C494A6C0946E56C008820F6 /* Build configuration list for PBXNativeTarget "SmartActivate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2C494A6D0946E56C008820F6 /* Development */,
-				2C494A6E0946E56C008820F6 /* Deployment */,
+				2C494A6D0946E56C008820F6 /* Debug */,
+				2C494A6E0946E56C008820F6 /* Release */,
 				2C494A6F0946E56C008820F6 /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -810,8 +820,8 @@
 		2C494A700946E56C008820F6 /* Build configuration list for PBXNativeTarget "SmartActivateApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2C494A710946E56C008820F6 /* Development */,
-				2C494A720946E56C008820F6 /* Deployment */,
+				2C494A710946E56C008820F6 /* Debug */,
+				2C494A720946E56C008820F6 /* Release */,
 				2C494A730946E56C008820F6 /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -820,8 +830,8 @@
 		2C494A740946E56C008820F6 /* Build configuration list for PBXNativeTarget "findProcess" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2C494A750946E56C008820F6 /* Development */,
-				2C494A760946E56C008820F6 /* Deployment */,
+				2C494A750946E56C008820F6 /* Debug */,
+				2C494A760946E56C008820F6 /* Release */,
 				2C494A770946E56C008820F6 /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -830,8 +840,8 @@
 		2C494A780946E56C008820F6 /* Build configuration list for PBXProject "SmartActivate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2C494A790946E56C008820F6 /* Development */,
-				2C494A7A0946E56C008820F6 /* Deployment */,
+				2C494A790946E56C008820F6 /* Debug */,
+				2C494A7A0946E56C008820F6 /* Release */,
 				2C494A7B0946E56C008820F6 /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;

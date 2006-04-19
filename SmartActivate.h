@@ -1,8 +1,7 @@
-#import <Cocoa/Cocoa.h>
 #include <ApplicationServices/ApplicationServices.h>
-#include <IOKit/IOCFBundle.h>
 
-NSDictionary *getProcessInfo(id targetCreator, id targetName, id targetIdentifier);
+#ifdef __OBJC__
+#import <Cocoa/Cocoa.h>
 
 @interface SmartActivate : NSObject {
 
@@ -13,3 +12,8 @@ NSDictionary *getProcessInfo(id targetCreator, id targetName, id targetIdentifie
 +(BOOL)activateAppOfName:(NSString *)targetName;
 
 @end
+#endif
+
+CFDictionaryRef getProcessInfo(CFStringRef targetCreator, CFStringRef targetName, CFStringRef targetIdentifier);
+
+OSStatus activateForProcessInfo(CFDictionaryRef pDict);

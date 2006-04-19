@@ -1,12 +1,6 @@
 #import "SmartActivate.h"
 #include <Carbon/Carbon.h>
 
-#ifdef __cplusplus
-#define EXTERN_C extern "C"
-#else
-#define EXTERN_C
-#endif
-
 #define useLog 0
 
 #define kSmartActivateSuite  'smAt'
@@ -23,7 +17,7 @@ static OSErr InstallMyEventHandlers();
 static void RemoveMyEventHandlers();
 void SATerminate();
 
-EXTERN_C OSErr SAInitialize(CFBundleRef theBundle)
+OSErr SAInitialize(CFBundleRef theBundle)
 {
 #if useLog
 	printf("start SAInitialize\n");
@@ -42,7 +36,7 @@ EXTERN_C OSErr SAInitialize(CFBundleRef theBundle)
 	}
 }
 
-EXTERN_C void SATerminate()
+void SATerminate()
 {
 	// Release anything you allocated in SAInitialize here...
 #if useLog
@@ -54,7 +48,7 @@ EXTERN_C void SATerminate()
 	}
 }
 
-EXTERN_C Boolean SAIsBusy()
+Boolean SAIsBusy()
 {
 	return true;
 	//return gAdditionReferenceCount != 0;
