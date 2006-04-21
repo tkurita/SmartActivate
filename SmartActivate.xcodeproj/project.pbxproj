@@ -141,6 +141,7 @@
 		08FB7794FE84155DC02AAC07 /* smartActivate */ = {
 			isa = PBXGroup;
 			children = (
+				2C1656C509F907C400CE5422 /* SmartActivateLib */,
 				2C863BCC08FE6CEE00F73527 /* Resources */,
 				08FB7795FE84155DC02AAC07 /* Source */,
 				C6859EA2029092E104C91782 /* Documentation */,
@@ -154,10 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				2CC10B18091282E2006C2EC7 /* mainFindProcess.m */,
-				2C1DAEC209F605B700139324 /* SmartActivate.c */,
 				2C863ADB08FE66C300F73527 /* mainOSAX.m */,
-				2C0EB20508F2CE6B0091C5CE /* SmartActivate.h */,
-				2C0EB20608F2CE6B0091C5CE /* SmartActivate.m */,
 				32A70AAB03705E1F00C91783 /* SmartActivate_Prefix.pch */,
 				08FB7796FE84155DC02AAC07 /* main.m */,
 			);
@@ -183,6 +181,16 @@
 				2CC10B280912873E006C2EC7 /* findProcess */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		2C1656C509F907C400CE5422 /* SmartActivateLib */ = {
+			isa = PBXGroup;
+			children = (
+				2C1DAEC209F605B700139324 /* SmartActivate.c */,
+				2C0EB20508F2CE6B0091C5CE /* SmartActivate.h */,
+				2C0EB20608F2CE6B0091C5CE /* SmartActivate.m */,
+			);
+			path = SmartActivateLib;
 			sourceTree = "<group>";
 		};
 		2C863BCC08FE6CEE00F73527 /* Resources */ = {

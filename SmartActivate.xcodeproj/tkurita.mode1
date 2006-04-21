@@ -276,8 +276,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>9</integer>
-									<integer>6</integer>
+									<integer>5</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -319,7 +319,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>mainOSAX.m</string>
+								<string>SmartActivate.sdef</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -327,18 +327,20 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>mainOSAX.m</string>
+										<string>SmartActivate.sdef</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>2C1DB08D09F6597C00139324</string>
+										<string>2C1DB09F09F65C0F00139324</string>
 										<key>history</key>
 										<array>
 											<string>2C864407095DA64C00E2C27E</string>
 											<string>2C864408095DA64C00E2C27E</string>
 											<string>2C1DAED209F6062600139324</string>
-											<string>2C1DAEE709F60AB000139324</string>
-											<string>2C1DAEEA09F60AB000139324</string>
+											<string>2C1DB09709F65C0F00139324</string>
+											<string>2C1DB09809F65C0F00139324</string>
+											<string>2C1DB09909F65C0F00139324</string>
+											<string>2C1DB09A09F65C0F00139324</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -353,6 +355,10 @@
 											<string>2C86440D095DA64C00E2C27E</string>
 											<string>2C86440E095DA64C00E2C27E</string>
 											<string>2C1DAED409F6062600139324</string>
+											<string>2C1DB09B09F65C0F00139324</string>
+											<string>2C1DB09C09F65C0F00139324</string>
+											<string>2C1DB09D09F65C0F00139324</string>
+											<string>2C1DB09E09F65C0F00139324</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -546,6 +552,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>2C3864870955383500491A5A</string>
 		<string>/Users/tkurita/Dev/Projects/SmartActivate/trunk/SmartActivate.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -587,8 +594,6 @@
 							<string>21pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXBuildLogShowsTranscriptDefaultKey</key>
@@ -630,7 +635,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>2C3864870955383500491A5A</string>
-				<string>2C1DAECA09F605BF00139324</string>
+				<string>2C1DB0A009F65C0F00139324</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
