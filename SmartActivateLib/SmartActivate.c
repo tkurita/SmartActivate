@@ -86,3 +86,14 @@ OSStatus activateForProcessInfo(CFDictionaryRef pDict) {
 	CFNumberGetValue(CFDictionaryGetValue(pDict,CFSTR("PSN")),kCFNumberLongLongType,&psn);
 	return SetFrontProcessWithOptions(&psn,kSetFrontProcessFrontWindowOnly);
 }
+
+OSStatus activateSelf() {
+	ProcessSerialNumber psn;
+	OSErr err = GetCurrentProcess(&psn);
+	OSStatus result = err;
+	if (err == noErr) {
+		result = SetFrontProcessWithOptions(&psn,kSetFrontProcessFrontWindowOnly);
+	}
+
+	return result;
+}

@@ -77,4 +77,10 @@
 	}
 }
 
++(BOOL)activateSelf
+{
+	OSStatus result = activateSelf();
+	return result == noErr;
+}
+
 @end
