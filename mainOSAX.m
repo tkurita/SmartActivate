@@ -24,7 +24,8 @@ OSErr SAInitialize(CFBundleRef theBundle)
 #endif	
 	gAdditionBundle = theBundle;  // no retain needed.
 	
-	// Any other setup you need here...
+	return InstallMyEventHandlers();
+	/*
 	if (! atexit(SATerminate)) {
 		return InstallMyEventHandlers();
 	}
@@ -34,6 +35,7 @@ OSErr SAInitialize(CFBundleRef theBundle)
 #endif
 		return noErr; //to avoid crash of application
 	}
+	*/
 }
 
 void SATerminate()
@@ -50,8 +52,8 @@ void SATerminate()
 
 Boolean SAIsBusy()
 {
-	return true;
-	//return gAdditionReferenceCount != 0;
+	//return true;
+	return gAdditionReferenceCount != 0;
 }
 
 int main(int argc, char *argv[])
