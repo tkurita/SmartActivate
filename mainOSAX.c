@@ -56,7 +56,6 @@ int main(int argc, char *argv[])
 	InstallMyEventHandlers();
     RunApplicationEventLoop();
 	RemoveMyEventHandlers();
-	//return NSApplicationMain(argc, (const char **) argv);
 }
 
 // =============================================================================
@@ -77,11 +76,22 @@ OSErr MyEventHandler(const AppleEvent *ev, AppleEvent *reply, long refcon)
 	
 	
 	err = getStringValue(ev, kCreatorParam, &targetCreator);
-	//if (err != noErr) printf("fail to get creator type with error :%d\n",err);
+	if (err != noErr) {
+		targetCreator = NULL;
+		//printf("fail to get creator type with error :%d\n",err);
+	}
+	
 	err = getStringValue(ev, kBundleIDParam, &targetIdentifier);
-	//if (err != noErr) printf("fail to get bundle ID with error :%d\n",err);
+	if (err != noErr) {
+		targetIdentifier = NULL;
+		//printf("fail to get bundle ID with error :%d\n",err);
+	}
+	
 	err = getStringValue(ev, keyDirectObject, &targetName);
-	//if (err != noErr) printf("fail to get application name with error :%d\n",err);
+	if (err != noErr) {
+		targetName = NULL;
+		//printf("fail to get application name with error :%d\n",err);
+	}
 	
 	Boolean isSuccess = 0;
 	CFDictionaryRef pdict = NULL;

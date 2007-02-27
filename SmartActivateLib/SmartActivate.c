@@ -28,7 +28,7 @@ CFDictionaryRef getProcessInfo(CFStringRef targetCreator, CFStringRef targetName
 	if (targetIdentifier == NULL) targetIdentifier = (CFStringRef)kCFNull;
 
 	CFMutableArrayRef valueList = CFArrayCreateMutable(NULL, nKey,&kCFTypeArrayCallBacks);
-	CFArrayAppendValue(valueList,targetCreator);
+	CFArrayAppendValue(valueList, targetCreator);
 	CFArrayAppendValue(valueList, targetIdentifier);
 	CFArrayAppendValue(valueList, targetName);
 	
