@@ -33,7 +33,7 @@ OSErr getStringValue(const AppleEvent *ev, AEKeyword theKey, CFStringRef *outStr
 	
 	err = AESizeOfParam(ev, theKey, &typeCode, &dataSize);
 	if (dataSize == 0) {
-		*outStr = CFSTR("");
+		//*outStr = CFSTR("");
 		goto bail;
 	}
 	

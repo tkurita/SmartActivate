@@ -30,6 +30,9 @@
 		2CC10B4609128960006C2EC7 /* mainFindProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC10B18091282E2006C2EC7 /* mainFindProcess.m */; };
 		2CC10BB409128978006C2EC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
 		2CC10BB50912897C006C2EC7 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0EB30908F2E32C0091C5CE /* ApplicationServices.framework */; };
+		2CD2B1AB0B96C86000DD307C /* AEUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2B1A90B96C86000DD307C /* AEUtils.c */; };
+		2CD2B1AC0B96C86000DD307C /* AEUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CD2B1AA0B96C86000DD307C /* AEUtils.h */; };
+		2CD2B1AD0B96C86000DD307C /* AEUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2B1A90B96C86000DD307C /* AEUtils.c */; };
 		8DD76F9A0486AA7600D96B5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
 		8DD76F9F0486AA7600D96B5E /* activate.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859EA3029092ED04C91782 /* activate.1 */; };
@@ -68,6 +71,8 @@
 		2C863BCA08FE6CE200F73527 /* Scripting.r */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.rez; path = Scripting.r; sourceTree = "<group>"; };
 		2CC10B18091282E2006C2EC7 /* mainFindProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainFindProcess.m; sourceTree = "<group>"; };
 		2CC10B280912873E006C2EC7 /* findProcess */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = findProcess; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CD2B1A90B96C86000DD307C /* AEUtils.c */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.c; path = AEUtils.c; sourceTree = "<group>"; };
+		2CD2B1AA0B96C86000DD307C /* AEUtils.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = AEUtils.h; sourceTree = "<group>"; };
 		32A70AAB03705E1F00C91783 /* SmartActivate_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartActivate_Prefix.pch; sourceTree = "<group>"; };
 		8DD76FA10486AA7600D96B5E /* activate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = activate; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6859EA3029092ED04C91782 /* activate.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = activate.1; sourceTree = "<group>"; };
@@ -119,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				2C6C9E550B927AFB00B9C2CD /* History.rd */,
+				2CD2B1A80B96C86000DD307C /* AEUtils */,
 				2C1656C509F907C400CE5422 /* SmartActivateLib */,
 				2C863BCC08FE6CEE00F73527 /* Resources */,
 				08FB7795FE84155DC02AAC07 /* Source */,
@@ -184,6 +190,15 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		2CD2B1A80B96C86000DD307C /* AEUtils */ = {
+			isa = PBXGroup;
+			children = (
+				2CD2B1A90B96C86000DD307C /* AEUtils.c */,
+				2CD2B1AA0B96C86000DD307C /* AEUtils.h */,
+			);
+			path = AEUtils;
+			sourceTree = "<group>";
+		};
 		C6859EA2029092E104C91782 /* Documentation */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C6CA0AD0B9430D100B9C2CD /* AEUtils.h in Headers */,
+				2CD2B1AC0B96C86000DD307C /* AEUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +355,7 @@
 				2C16528C08FF7003003142E0 /* mainOSAX.c in Sources */,
 				2C1DAEC509F605B700139324 /* SmartActivate.c in Sources */,
 				2C6CA15A0B94415600B9C2CD /* AEUtils.c in Sources */,
+				2CD2B1AD0B96C86000DD307C /* AEUtils.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +366,7 @@
 				2C863ADC08FE66C300F73527 /* mainOSAX.c in Sources */,
 				2C1DAEC309F605B700139324 /* SmartActivate.c in Sources */,
 				2C6CA0AE0B9430D200B9C2CD /* AEUtils.c in Sources */,
+				2CD2B1AB0B96C86000DD307C /* AEUtils.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
