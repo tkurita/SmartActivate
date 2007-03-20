@@ -13,16 +13,15 @@
 		2C16544808FF7014003142E0 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C863B9908FE6A0400F73527 /* Carbon.framework */; };
 		2C16544908FF7014003142E0 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0EB30908F2E32C0091C5CE /* ApplicationServices.framework */; };
 		2C16544A08FF7014003142E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
-		2C16545008FF7051003142E0 /* Scripting.r in Rez */ = {isa = PBXBuildFile; fileRef = 2C863BCA08FE6CE200F73527 /* Scripting.r */; };
 		2C1DAEC309F605B700139324 /* SmartActivate.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C1DAEC209F605B700139324 /* SmartActivate.c */; };
 		2C1DAEC409F605B700139324 /* SmartActivate.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C1DAEC209F605B700139324 /* SmartActivate.c */; };
 		2C1DAEC509F605B700139324 /* SmartActivate.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C1DAEC209F605B700139324 /* SmartActivate.c */; };
 		2C1DAEC609F605B700139324 /* SmartActivate.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C1DAEC209F605B700139324 /* SmartActivate.c */; };
-		2C863A5B08FE656100F73527 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
+		2C5859EA0BAFADE500D46AD8 /* Scripting.r in Rez */ = {isa = PBXBuildFile; fileRef = 2C863BCA08FE6CE200F73527 /* Scripting.r */; };
+		2C5859EB0BAFADE900D46AD8 /* Scripting.r in Rez */ = {isa = PBXBuildFile; fileRef = 2C863BCA08FE6CE200F73527 /* Scripting.r */; };
 		2C863AC908FE656300F73527 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0EB30908F2E32C0091C5CE /* ApplicationServices.framework */; };
 		2C863ADC08FE66C300F73527 /* mainOSAX.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C863ADB08FE66C300F73527 /* mainOSAX.c */; };
 		2C863B9A08FE6A0400F73527 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C863B9908FE6A0400F73527 /* Carbon.framework */; };
-		2C863BCB08FE6CE200F73527 /* Scripting.r in Rez */ = {isa = PBXBuildFile; fileRef = 2C863BCA08FE6CE200F73527 /* Scripting.r */; };
 		2CC10B2A0912875C006C2EC7 /* SmartActivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0EB20608F2CE6B0091C5CE /* SmartActivate.m */; };
 		2CC10B4609128960006C2EC7 /* mainFindProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC10B18091282E2006C2EC7 /* mainFindProcess.m */; };
 		2CC10BB409128978006C2EC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
@@ -54,7 +53,7 @@
 		2C0EB20508F2CE6B0091C5CE /* SmartActivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartActivate.h; sourceTree = "<group>"; };
 		2C0EB20608F2CE6B0091C5CE /* SmartActivate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartActivate.m; sourceTree = "<group>"; };
 		2C0EB30908F2E32C0091C5CE /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
-		2C16528608FF6F38003142E0 /* SmartActivateApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartActivateApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C16528608FF6F38003142E0 /* SmartActivateApp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SmartActivateApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C16528808FF6F38003142E0 /* SmartActivateApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; lineEnding = 0; path = "SmartActivateApp-Info.plist"; sourceTree = SOURCE_ROOT; };
 		2C1DAEC209F605B700139324 /* SmartActivate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SmartActivate.c; sourceTree = "<group>"; };
 		2C6C9E550B927AFB00B9C2CD /* History.rd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = History.rd; sourceTree = "<group>"; };
@@ -62,7 +61,7 @@
 		2C863A2508FE639D00F73527 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = text.plist; fileEncoding = 4; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		2C863ADB08FE66C300F73527 /* mainOSAX.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mainOSAX.c; sourceTree = "<group>"; };
 		2C863B9908FE6A0400F73527 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
-		2C863BB908FE6C1A00F73527 /* SmartActivate.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SmartActivate.sdef; sourceTree = "<group>"; };
+		2C863BB908FE6C1A00F73527 /* SmartActivate.sdef */ = {isa = PBXFileReference; explicitFileType = text.sdef; fileEncoding = 4; path = SmartActivate.sdef; sourceTree = "<group>"; };
 		2C863BCA08FE6CE200F73527 /* Scripting.r */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.rez; path = Scripting.r; sourceTree = "<group>"; };
 		2CC10B18091282E2006C2EC7 /* mainFindProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainFindProcess.m; sourceTree = "<group>"; };
 		2CC10B280912873E006C2EC7 /* findProcess */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = findProcess; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,7 +88,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C863AC908FE656300F73527 /* ApplicationServices.framework in Frameworks */,
-				2C863A5B08FE656100F73527 /* Foundation.framework in Frameworks */,
 				2C863B9A08FE6A0400F73527 /* Carbon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +219,7 @@
 				2C16528208FF6F38003142E0 /* Resources */,
 				2C16528308FF6F38003142E0 /* Sources */,
 				2C16528408FF6F38003142E0 /* Frameworks */,
+				2C5859EC0BAFADFD00D46AD8 /* ShellScript */,
 				2C16544F08FF7047003142E0 /* Rez */,
 			);
 			buildRules = (
@@ -240,6 +239,7 @@
 				2C863A2008FE639D00F73527 /* Resources */,
 				2C863A2108FE639D00F73527 /* Sources */,
 				2C863A2208FE639D00F73527 /* Frameworks */,
+				2C5859BC0BAFAC7F00D46AD8 /* ShellScript */,
 				2C863ACD08FE658900F73527 /* Rez */,
 			);
 			buildRules = (
@@ -325,7 +325,7 @@
 			isa = PBXRezBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C16545008FF7051003142E0 /* Scripting.r in Rez */,
+				2C5859EB0BAFADE900D46AD8 /* Scripting.r in Rez */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,11 +333,44 @@
 			isa = PBXRezBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C863BCB08FE6CE200F73527 /* Scripting.r in Rez */,
+				2C5859EA0BAFADE500D46AD8 /* Scripting.r in Rez */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C5859BC0BAFAC7F00D46AD8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/SmartActivate.sdef",
+			);
+			outputPaths = (
+				"$(SRCROOT)/Scripting.r",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/bin/sdp -f a -o ${SRCROOT}/Scripting.r SmartActivate.sdef";
+		};
+		2C5859EC0BAFADFD00D46AD8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/SmartAcrivate.sdef",
+			);
+			outputPaths = (
+				"$(SRCROOT)/Scripting.r",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/bin/sdp -f a -o ${SRCROOT}/Scripting.r SmartActivate.sdef";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2C16528308FF6F38003142E0 /* Sources */ = {
@@ -430,6 +463,7 @@
 		2C494A6D0946E56C008820F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = ppc;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -506,6 +540,7 @@
 		2C494A710946E56C008820F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = ppc;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
