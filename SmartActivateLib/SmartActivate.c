@@ -24,7 +24,14 @@ CFDictionaryRef getProcessInfo(CFStringRef targetCreator, CFStringRef targetName
 		firstKeyIndex = 2;
 	}
 	if (targetCreator == NULL) targetCreator = (CFStringRef)kCFNull;
-	if (targetName == NULL) targetName = (CFStringRef)kCFNull;
+	if (targetName == NULL) {
+		targetName = (CFStringRef)kCFNull;
+	} else {
+		CFMutableStringRef target_name_mut = CFStringCreateMutableCopy(NULL, 0, targetName);
+		CFStringNormalize((CFMutableStringRef) target_name_mut,  kCFStringNormalizationFormKC);
+		targetName = target_name_mut;
+	}
+	
 	if (targetIdentifier == NULL) targetIdentifier = (CFStringRef)kCFNull;
 
 	CFMutableArrayRef valueList = CFArrayCreateMutable(NULL, nKey,&kCFTypeArrayCallBacks);
@@ -48,6 +55,11 @@ CFDictionaryRef getProcessInfo(CFStringRef targetCreator, CFStringRef targetName
 		CFStringRef dictValue = CFDictionaryGetValue(pDict, dictKey);
 		if (dictValue != NULL) {
 			isSameStr = CFStringCompare(dictValue,targetValue,0);
+			#if useLog
+			CFShow(dictValue);
+			CFShow(CFDictionaryGetValue(pDict, CFSTR("CFBundleIdentifier")));
+			CFShow(targetValue);
+			#endif
 			if (isSameStr == kCFCompareEqualTo){
 				isFound = true;
 				for (CFIndex i=0; i < 2; i++) {
@@ -73,6 +85,8 @@ CFDictionaryRef getProcessInfo(CFStringRef targetCreator, CFStringRef targetName
 	
 	CFRelease(keyList);
 	CFRelease(valueList);
+	if (targetName != NULL) CFRelease(targetName);
+	
 	if (isFound) {
 		return pDict;
 	}
