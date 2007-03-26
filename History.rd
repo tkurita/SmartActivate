@@ -1,5 +1,23 @@
 = To Do
 
+= 2007-03-26
+SHIFT_JIS ではなく、SJIS でも動くみたい
+
+while loop のなかで、char *outbuf を確保しなおすと、うまくいくようだ。
+
+iconv を連続して call すると、outbuf の続きに書き込むようだ。
+outbuf の先頭に書き込んでくれない。
+iconv を呼んだ後だと、reallocになぜか失敗する。
+iconv_open - iconv_close を実行するようにしよう。
+
+= 2007-03-23
+querylocale(3)           - Get locale name for a specified category
+LC_CTYPE を使うのがいいかも？
+
+[NSLocale currentLocale] は環境変数 LANG を反映しない。
+NSScriptCode とは何？ encoding とは違うようだ
+
+
 = 2007.03.20
 version 1.0.3
 * Cocoa をリンクしないようにした。

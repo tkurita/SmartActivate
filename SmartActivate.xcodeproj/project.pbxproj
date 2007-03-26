@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2C0EB20808F2CE6B0091C5CE /* SmartActivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0EB20608F2CE6B0091C5CE /* SmartActivate.m */; };
 		2C0EB30A08F2E32C0091C5CE /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0EB30908F2E32C0091C5CE /* ApplicationServices.framework */; };
+		2C11A9E70BB7807900C7B9BB /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C11A9E40BB7807900C7B9BB /* libiconv.dylib */; };
+		2C11A9E80BB7807900C7B9BB /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C11A9E40BB7807900C7B9BB /* libiconv.dylib */; };
 		2C16528C08FF7003003142E0 /* mainOSAX.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C863ADB08FE66C300F73527 /* mainOSAX.c */; };
 		2C16544808FF7014003142E0 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C863B9908FE6A0400F73527 /* Carbon.framework */; };
 		2C16544908FF7014003142E0 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0EB30908F2E32C0091C5CE /* ApplicationServices.framework */; };
@@ -53,7 +55,8 @@
 		2C0EB20508F2CE6B0091C5CE /* SmartActivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartActivate.h; sourceTree = "<group>"; };
 		2C0EB20608F2CE6B0091C5CE /* SmartActivate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartActivate.m; sourceTree = "<group>"; };
 		2C0EB30908F2E32C0091C5CE /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
-		2C16528608FF6F38003142E0 /* SmartActivateApp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SmartActivateApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C11A9E40BB7807900C7B9BB /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = /usr/lib/libiconv.dylib; sourceTree = "<absolute>"; };
+		2C16528608FF6F38003142E0 /* SmartActivateApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartActivateApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C16528808FF6F38003142E0 /* SmartActivateApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; lineEnding = 0; path = "SmartActivateApp-Info.plist"; sourceTree = SOURCE_ROOT; };
 		2C1DAEC209F605B700139324 /* SmartActivate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SmartActivate.c; sourceTree = "<group>"; };
 		2C6C9E550B927AFB00B9C2CD /* History.rd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = History.rd; sourceTree = "<group>"; };
@@ -98,6 +101,7 @@
 			files = (
 				2CC10BB50912897C006C2EC7 /* ApplicationServices.framework in Frameworks */,
 				2CC10BB409128978006C2EC7 /* Foundation.framework in Frameworks */,
+				2C11A9E80BB7807900C7B9BB /* libiconv.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +111,7 @@
 			files = (
 				8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */,
 				2C0EB30A08F2E32C0091C5CE /* ApplicationServices.framework in Frameworks */,
+				2C11A9E70BB7807900C7B9BB /* libiconv.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +121,7 @@
 		08FB7794FE84155DC02AAC07 /* smartActivate */ = {
 			isa = PBXGroup;
 			children = (
+				2C11A9E40BB7807900C7B9BB /* libiconv.dylib */,
 				2C6C9E550B927AFB00B9C2CD /* History.rd */,
 				2CD2B1A80B96C86000DD307C /* AEUtils */,
 				2C1656C509F907C400CE5422 /* SmartActivateLib */,
@@ -419,6 +425,7 @@
 		2C494A690946E56C008820F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = ppc;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
