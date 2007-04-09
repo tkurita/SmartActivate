@@ -109,11 +109,16 @@ NSString *stringWithConvert(char *inbuf) {
 
 void *converter_with_locale() {
 	char *current_locale = setlocale(LC_CTYPE, "");
-	//printf("%s\n", current_locale);
+	#if useLog
+	printf("Current Locale: %s :%d\n", current_locale, strlen(current_locale));
+	#endif
 	if (!current_locale) return stringForUTF8;
+	if (strcmp(current_locale, "C") == 0) return stringForUTF8;
 	
 	current_charset = nl_langinfo(CODESET);
-	//printf("%s\n", current_charset);
+	#if useLog
+	printf("CODESET : %s\n", current_charset);
+	#endif
 	
 	if (strcmp(current_charset, "UTF-8") != 0) {
 		uft8conv_t = iconv_open ("UTF-8", current_charset);
@@ -128,6 +133,13 @@ void *converter_with_locale() {
 	
 }
 
+NSString *normalizeString(NSString *inString, CFStringNormalizationForm normForm)
+{
+	NSMutableString *mutable_string = [inString mutableCopy];
+	CFStringNormalize((CFMutableStringRef) mutable_string, normForm);
+	return mutable_string;
+}
+		
 int main (int argc, char * const argv[]) {
 
 #if useLog
@@ -136,9 +148,6 @@ int main (int argc, char * const argv[]) {
 		printf("%i\t%s\n",i,argv[i]);
 	}
 #endif
-	NSString * (* stringFromLocaleString)(char *inbuf) = converter_with_locale();
-	if (stringFromLocaleString == NULL) return 1;
-	
     NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
 	
 	/* get arguments */
@@ -167,10 +176,10 @@ int main (int argc, char * const argv[]) {
 				showVersion();
 				exit(0);
 			case 't': 
-				targetCreator = [NSString stringWithCString:optarg encoding:NSUTF8StringEncoding];
+				targetCreator = [NSString stringWithUTF8String:optarg];
 				break;
 			case 'i': 
-				targetIdentifier = [NSString stringWithCString:optarg encoding:NSUTF8StringEncoding];
+				targetIdentifier = [NSString stringWithUTF8String:optarg];
 				break;				
 			case '?':
 			default	:
@@ -183,18 +192,26 @@ int main (int argc, char * const argv[]) {
 	}
 
 #if useLog
+	NSLog([NSString stringWithFormat:@"targetCreator : %@", targetCreator]);
+	NSLog([NSString stringWithFormat:@"targetName : %@", targetName]);
 	printf("%i\t%i\n",argc,optind);
 #endif
 	
 	if (optind < argc) {		
-		targetName = stringFromLocaleString(argv[optind]);
+		NSString * (* stringFromLocaleString)(char *inbuf) = converter_with_locale();
+		if (stringFromLocaleString != NULL) {
+			targetName = stringFromLocaleString(argv[optind]);
+			targetName = normalizeString(targetName, kCFStringNormalizationFormKC);
+		}
 	}
-#if useLog
-	NSLog([NSString stringWithFormat:@"targetCreator : %@", targetCreator]);
-	NSLog([NSString stringWithFormat:@"targetName : %@", targetName]);
-#endif
 	
-	BOOL isSuccess = [SmartActivate activateAppOfType:targetCreator processName:targetName identifier:targetIdentifier];
+	BOOL isSuccess = NO;
+	if (targetName || targetCreator || targetIdentifier) {
+		isSuccess = [SmartActivate activateAppOfType:targetCreator processName:targetName identifier:targetIdentifier];
+	} else {
+		fprintf(stdout, "No valid arguments.\n");
+	}
+	
     [pool release];
 
 	if (isSuccess)

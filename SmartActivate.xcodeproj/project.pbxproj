@@ -40,7 +40,7 @@
 		8DD76F9E0486AA7600D96B5E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 8;
-			dstPath = $HOME/share/man/man1/;
+			dstPath = /share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
 				8DD76F9F0486AA7600D96B5E /* activate.1 in CopyFiles */,
@@ -121,7 +121,6 @@
 		08FB7794FE84155DC02AAC07 /* smartActivate */ = {
 			isa = PBXGroup;
 			children = (
-				2C11A9E40BB7807900C7B9BB /* libiconv.dylib */,
 				2C6C9E550B927AFB00B9C2CD /* History.rd */,
 				2CD2B1A80B96C86000DD307C /* AEUtils */,
 				2C1656C509F907C400CE5422 /* SmartActivateLib */,
@@ -148,6 +147,7 @@
 		08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				2C11A9E40BB7807900C7B9BB /* libiconv.dylib */,
 				2C863B9908FE6A0400F73527 /* Carbon.framework */,
 				2C0EB30908F2E32C0091C5CE /* ApplicationServices.framework */,
 				08FB779EFE84155DC02AAC07 /* Foundation.framework */,
