@@ -10,7 +10,7 @@
 + (BOOL)activateAppOfType:(NSString *)targetCreator processName:(NSString*)targetName identifier:(NSString*)targetIdentifier;
 + (BOOL)activateAppOfType:(NSString *)targetCreator;
 + (BOOL)activateAppOfName:(NSString *)targetName;
-+ (BOOL)activateAppOfIdentifer:(NSString *)targetIdentifier;
++ (BOOL)activateAppOfIdentifier:(NSString *)targetIdentifier;
 
 + (NSDictionary *)processInfoOfType:(NSString *)targetCreator processName:(NSString*)targetName identifier:(NSString*)targetIdentifier;
 + (NSDictionary *)processInfoOfIdentifier:(NSString*)targetIdentifier;

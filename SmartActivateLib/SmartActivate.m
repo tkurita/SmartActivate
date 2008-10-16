@@ -46,7 +46,7 @@
 	return [pDict autorelease];
 }
 
-+(BOOL)activateAppOfIdentifer:(NSString *)targetIdentifier
++(BOOL)activateAppOfIdentifier:(NSString *)targetIdentifier
 {
 	return [self activateAppOfType:nil processName:nil identifier:targetIdentifier];
 }
