@@ -26,3 +26,4 @@
 CFDictionaryRef getProcessInfo(CFStringRef targetCreator, CFStringRef targetName, CFStringRef targetIdentifier);
 OSStatus activateForProcessInfo(CFDictionaryRef pDict);
 OSStatus activateSelf();
+ProcessSerialNumber getPSNFromDict(CFDictionaryRef pDict);

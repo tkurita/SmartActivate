@@ -76,16 +76,31 @@ CFDictionaryRef getProcessInfo(CFStringRef targetCreator, CFStringRef targetName
 	CFRelease(valueList);
 	
 	if (isFound) {
-		return pDict;
+#if useLog	
+		printf("getProcessInfo found PSN high:%d, low:%d \n", psn.highLongOfPSN, psn.lowLongOfPSN);
+#endif
+		CFMutableDictionaryRef p_dict_psn = CFDictionaryCreateMutableCopy (NULL, 0, pDict);
+		CFDictionaryAddValue(p_dict_psn, CFSTR("PSNLow"), 
+									CFNumberCreate(NULL, kCFNumberLongType, &(psn.lowLongOfPSN)));
+		CFDictionaryAddValue(p_dict_psn, CFSTR("PSNHigh"), 
+									CFNumberCreate(NULL, kCFNumberLongType, &(psn.highLongOfPSN)));
+		CFRelease(pDict);
+		return p_dict_psn;
 	}
 	else{
 		return nil;
 	}
 }
 
-OSStatus activateForProcessInfo(CFDictionaryRef pDict) {
+ProcessSerialNumber getPSNFromDict(CFDictionaryRef pDict) {
 	ProcessSerialNumber psn;
-	CFNumberGetValue(CFDictionaryGetValue(pDict,CFSTR("PSN")),kCFNumberLongLongType,&psn);
+	CFNumberGetValue(CFDictionaryGetValue(pDict,CFSTR("PSNLow")),kCFNumberLongType,&(psn.lowLongOfPSN));
+	CFNumberGetValue(CFDictionaryGetValue(pDict,CFSTR("PSNHigh")),kCFNumberLongType,&(psn.highLongOfPSN));
+	return psn;
+}
+
+OSStatus activateForProcessInfo(CFDictionaryRef pDict) {
+	ProcessSerialNumber psn = getPSNFromDict(pDict);
 	return SetFrontProcessWithOptions(&psn,kSetFrontProcessFrontWindowOnly);
 }
 
