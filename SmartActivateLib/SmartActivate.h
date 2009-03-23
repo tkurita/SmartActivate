@@ -11,6 +11,7 @@
 + (BOOL)activateAppOfType:(NSString *)targetCreator;
 + (BOOL)activateAppOfName:(NSString *)targetName;
 + (BOOL)activateAppOfIdentifier:(NSString *)targetIdentifier;
++ (BOOL)activateSelf;
 
 + (NSDictionary *)processInfoOfType:(NSString *)targetCreator processName:(NSString*)targetName identifier:(NSString*)targetIdentifier;
 + (NSDictionary *)processInfoOfIdentifier:(NSString*)targetIdentifier;
@@ -18,7 +19,6 @@
 + (NSDictionary *)processInfoOfType:(NSString *)targetCreator;
 
 + (BOOL)activateAppOfInfo:(NSDictionary *)pDict;
-//+ (BOOL)activateSelf:(id)sender;
 
 @end
 #endif
