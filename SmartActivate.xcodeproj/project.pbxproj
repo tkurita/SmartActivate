@@ -57,7 +57,7 @@
 		2C0EB30908F2E32C0091C5CE /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
 		2C11A9E40BB7807900C7B9BB /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = /usr/lib/libiconv.dylib; sourceTree = "<absolute>"; };
 		2C16528608FF6F38003142E0 /* SmartActivateApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartActivateApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C16528808FF6F38003142E0 /* SmartActivateApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; lineEnding = 0; path = "SmartActivateApp-Info.plist"; sourceTree = SOURCE_ROOT; };
+		2C16528808FF6F38003142E0 /* SmartActivateApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; lineEnding = 0; path = "SmartActivateApp-Info.plist"; sourceTree = SOURCE_ROOT; };
 		2C1DAEC209F605B700139324 /* SmartActivate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SmartActivate.c; sourceTree = "<group>"; };
 		2C6C9E550B927AFB00B9C2CD /* History.rd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = History.rd; sourceTree = "<group>"; };
 		2C863A2408FE639D00F73527 /* SmartActivate.osax */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartActivate.osax; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,8 +68,8 @@
 		2C863BCA08FE6CE200F73527 /* Scripting.r */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.rez; path = Scripting.r; sourceTree = "<group>"; };
 		2CC10B18091282E2006C2EC7 /* mainFindProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainFindProcess.m; sourceTree = "<group>"; };
 		2CC10B280912873E006C2EC7 /* findProcess */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = findProcess; sourceTree = BUILT_PRODUCTS_DIR; };
-		2CD2B1A90B96C86000DD307C /* AEUtils.c */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.c; path = AEUtils.c; sourceTree = "<group>"; };
-		2CD2B1AA0B96C86000DD307C /* AEUtils.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = AEUtils.h; sourceTree = "<group>"; };
+		2CD2B1A90B96C86000DD307C /* AEUtils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; lineEnding = 0; path = AEUtils.c; sourceTree = "<group>"; };
+		2CD2B1AA0B96C86000DD307C /* AEUtils.h */ = {isa = PBXFileReference; fileEncoding = 2147483649; lastKnownFileType = sourcecode.c.h; path = AEUtils.h; sourceTree = "<group>"; };
 		32A70AAB03705E1F00C91783 /* SmartActivate_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartActivate_Prefix.pch; sourceTree = "<group>"; };
 		8DD76FA10486AA7600D96B5E /* activate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = activate; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6859EA3029092ED04C91782 /* activate.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = activate.1; sourceTree = "<group>"; };
@@ -297,9 +297,11 @@
 		08FB7793FE84155DC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = 2C494A780946E56C008820F6 /* Build configuration list for PBXProject "SmartActivate" */;
+			compatibilityVersion = "Xcode 2.4";
 			hasScannedForEncodings = 1;
 			mainGroup = 08FB7794FE84155DC02AAC07 /* smartActivate */;
 			projectDirPath = "";
+			projectRoot = "";
 			targets = (
 				8DD76F960486AA7600D96B5E /* activate */,
 				2C863A2308FE639D00F73527 /* SmartActivate */,
@@ -700,21 +702,19 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				PREBINDING = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
 			};
 			name = Debug;
 		};
 		2C494A7A0946E56C008820F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "ppc i386 ppc64 x86_64";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				PREBINDING = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
 			};
 			name = Release;
 		};
@@ -728,7 +728,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				PREBINDING = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
 			};
 			name = Default;
 		};

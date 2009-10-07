@@ -2,6 +2,7 @@
 #include "AEUtils.h"
 
 #include <Carbon/Carbon.h>
+#include <ApplicationServices/ApplicationServices.h>
 
 #define useLog 0
 
@@ -51,16 +52,18 @@ Boolean SAIsBusy()
 	return gAdditionReferenceCount != 0;
 }
 
+#if !__LP64__
 int main(int argc, char *argv[])
 {
 	InstallMyEventHandlers();
     RunApplicationEventLoop();
 	RemoveMyEventHandlers();
 }
+#endif
 
 // =============================================================================
 
-OSErr MyEventHandler(const AppleEvent *ev, AppleEvent *reply, long refcon)
+OSErr MyEventHandler(const AppleEvent *ev, AppleEvent *reply, SRefCon refcon)
 {
 #if useLog
 	NSLog(@"start MyEventHandler");
