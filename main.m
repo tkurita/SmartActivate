@@ -64,12 +64,12 @@ NSString *stringWithConvert(char *inbuf) {
 	NSLog([NSString stringWithFormat:@"inbuf :%@", [NSString stringWithUTF8String:inbuf]]);	 
 	#endif
 	NSMutableString *new_string = [NSMutableString string];
-	iconv (uft8conv_t, NULL, NULL, NULL, NULL);
+	iconv(uft8conv_t, NULL, NULL, NULL, NULL);
 	while (inbyteleft > 0) {
 		char outbuf[BufferSize]="";
 		char *outbuf_p = outbuf;
 		size_t outbyteleft = BufferSize-1;
-		conv_result = iconv (uft8conv_t, (const char **)&inbuf, &inbyteleft, &outbuf_p, &outbyteleft);
+		conv_result = iconv(uft8conv_t, (char **)&inbuf, &inbyteleft, &outbuf_p, &outbyteleft);
 		if (conv_result == (size_t)-1) {
 			switch (errno) {
 				case E2BIG:
@@ -122,7 +122,7 @@ void *converter_with_locale() {
 	
 	if (strcmp(current_charset, "UTF-8") != 0) {
 		uft8conv_t = iconv_open ("UTF-8", current_charset);
-		if ((int)uft8conv_t < 0) {
+		if (uft8conv_t < 0) {
 			perror("Error : iconv_open");
 			return NULL;
 		}
