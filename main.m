@@ -25,7 +25,7 @@
 
 #define BufferSize 256
 
-static iconv_t uft8conv_t;
+static iconv_t utf8conv_t;
 static char *current_charset;
 
 #define useLog 0
@@ -64,12 +64,16 @@ NSString *stringWithConvert(char *inbuf) {
 	NSLog([NSString stringWithFormat:@"inbuf :%@", [NSString stringWithUTF8String:inbuf]]);	 
 	#endif
 	NSMutableString *new_string = [NSMutableString string];
-	iconv(uft8conv_t, NULL, NULL, NULL, NULL);
+	conv_result = iconv(utf8conv_t, NULL, NULL, NULL, NULL);
+	if (conv_result == (size_t)-1) {
+		perror("Error : iconv");
+		goto bail;
+	}
 	while (inbyteleft > 0) {
 		char outbuf[BufferSize]="";
 		char *outbuf_p = outbuf;
 		size_t outbyteleft = BufferSize-1;
-		conv_result = iconv(uft8conv_t, (char **)&inbuf, &inbyteleft, &outbuf_p, &outbyteleft);
+		conv_result = iconv(utf8conv_t, (char **)&inbuf, &inbyteleft, &outbuf_p, &outbyteleft);
 		if (conv_result == (size_t)-1) {
 			switch (errno) {
 				case E2BIG:
@@ -102,8 +106,8 @@ NSString *stringWithConvert(char *inbuf) {
 	#if useLog
 	NSLog([NSString stringWithFormat:@"new_string : %@", new_string]);
 	#endif
-	
-	iconv_close(uft8conv_t);
+bail:	
+	iconv_close(utf8conv_t);
 	return new_string;
 }
 
@@ -121,8 +125,8 @@ void *converter_with_locale() {
 	#endif
 	
 	if (strcmp(current_charset, "UTF-8") != 0) {
-		uft8conv_t = iconv_open ("UTF-8", current_charset);
-		if (uft8conv_t < 0) {
+		utf8conv_t = iconv_open ("UTF-8", current_charset);
+		if (utf8conv_t < 0) {
 			perror("Error : iconv_open");
 			return NULL;
 		}
@@ -201,7 +205,8 @@ int main (int argc, char * const argv[]) {
 		NSString * (* stringFromLocaleString)(char *inbuf) = converter_with_locale();
 		if (stringFromLocaleString != NULL) {
 			targetName = stringFromLocaleString(argv[optind]);
-			targetName = normalizeString(targetName, kCFStringNormalizationFormKC);
+			if (targetName) 
+				targetName = normalizeString(targetName, kCFStringNormalizationFormKC);
 		}
 	}
 	
