@@ -7,9 +7,9 @@
 	<key>CFBundleExecutable</key>
 	<string>SmartActivate</string>
 	<key>CFBundleGetInfoString</key>
-	<string>1.0.5 copyright 2005-2008, Tetsuro KURITA</string>
+	<string>1.0.6 copyright 2005-2009, Tetsuro KURITA</string>
 	<key>CFBundleIdentifier</key>
-	<string>SmartActivate</string>
+	<string>Scriptfactory.SmartActivate</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundlePackageType</key>
@@ -17,7 +17,7 @@
 	<key>CFBundleSignature</key>
 	<string>ascr</string>
 	<key>CFBundleVersion</key>
-	<string>1.0.5</string>
+	<string>1.0.6</string>
 	<key>CSResourcesFileMapped</key>
 	<true/>
 	<key>OSAScriptingDefinition</key>
