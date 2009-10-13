@@ -45,7 +45,7 @@ void showHelp() {
 }
 
 void showVersion() {
-	printf("activate 1.0.4 copyright 2005-2007, Tetsuro KURITA\n");
+	printf("activate 1.0.6 copyright 2005-2009, Tetsuro KURITA\n");
 }
 
 NSString *stringForUTF8(char *inbuf) {
