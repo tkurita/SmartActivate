@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>SmartActivate</string>
 	<key>CFBundleGetInfoString</key>
-	<string>1.1 copyright 2005-2009, Tetsuro KURITA</string>
+	<string>1.0.6 copyright 2005-2009, Tetsuro KURITA</string>
 	<key>CFBundleIdentifier</key>
 	<string>Scriptfactory.SmartActivate</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -17,7 +17,7 @@
 	<key>CFBundleSignature</key>
 	<string>ascr</string>
 	<key>CFBundleVersion</key>
-	<string>1.1</string>
+	<string>1.0.6</string>
 	<key>CSResourcesFileMapped</key>
 	<true/>
 	<key>OSAScriptingDefinition</key>
@@ -27,14 +27,7 @@
 		<key>Events</key>
 		<dict>
 			<key>smAtsmAt</key>
-			<dict>
-				<key>Handler</key>
-				<string>MyEventHandler</string>
-				<key>ThreadSafe</key>
-				<true/>
-				<key>Context</key>
-				<string>Any</string>
-			</dict>
+			<string>MyEventHandler</string>
 		</dict>
 	</dict>
 </dict>
