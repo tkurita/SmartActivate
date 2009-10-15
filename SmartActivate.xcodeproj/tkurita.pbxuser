@@ -4,7 +4,7 @@
 		activeArchitecturePreference = x86_64;
 		activeBuildConfigurationName = Release;
 		activeExecutable = 2C0EB1FF08F2CE0F0091C5CE /* activate */;
-		activeTarget = 2C863A2308FE639D00F73527 /* SmartActivate */;
+		activeTarget = 2CB1DBB71084EEF0007CDBA3 /* SmartActivate for 10.5 */;
 		addToTargets = (
 			2CB1DBB71084EEF0007CDBA3 /* SmartActivate for 10.5 */,
 		);
