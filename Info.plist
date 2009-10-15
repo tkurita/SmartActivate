@@ -37,7 +37,7 @@
 				<key>ThreadSafe</key>
 				<true/>
 				<key>Context</key>
-				<string>Any</string>
+				<string>Process</string>
 			</dict>
 		</dict>
 	</dict>
