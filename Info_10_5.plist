@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>SmartActivate</string>
 	<key>CFBundleVersion</key>
-	<string>4</string>
+	<string>5</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0.6</string>
 	<key>NSHumanReadableCopyright</key>

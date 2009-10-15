@@ -70,7 +70,7 @@ OSErr MyEventHandler(const AppleEvent *ev, AppleEvent *reply, SRefCon refcon)
 #endif	
 	++gAdditionReferenceCount;  // increment the reference count first thing!
 	
-	OSErr resultCode;
+	OSErr resultCode = noErr;
 	OSErr err;
 
 	CFStringRef targetCreator = NULL;
@@ -91,12 +91,19 @@ OSErr MyEventHandler(const AppleEvent *ev, AppleEvent *reply, SRefCon refcon)
 			if (err == noErr) isSuccess = 1;
 		}
 		resultCode = noErr;
-	}
-	else {
-		isSuccess = 0;
-		resultCode = errAEDescNotFound;
+	} else {
+		ProcessSerialNumber psn = {kNoProcess, kNoProcess};
+		resultCode = GetCurrentProcess(&psn);
+		if (resultCode != noErr) 
+			goto bail;
+		resultCode = SetFrontProcessWithOptions(&psn,kSetFrontProcessFrontWindowOnly);
+		if (resultCode == noErr) 
+			isSuccess = 1;
+		else
+			goto bail;		
 	}
 
+bail:
 	putBoolToReply(isSuccess, reply);
 	--gAdditionReferenceCount;  // don't forget to decrement the reference count when you leave!
 	safeRelease(targetCreator);
