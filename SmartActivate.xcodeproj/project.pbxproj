@@ -19,6 +19,8 @@
 		2C1DAEC409F605B700139324 /* SmartActivate.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C1DAEC209F605B700139324 /* SmartActivate.c */; };
 		2C1DAEC509F605B700139324 /* SmartActivate.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C1DAEC209F605B700139324 /* SmartActivate.c */; };
 		2C1DAEC609F605B700139324 /* SmartActivate.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C1DAEC209F605B700139324 /* SmartActivate.c */; };
+		2C2B982610ACE63E007C570A /* SmartActivate.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 2C863BB908FE6C1A00F73527 /* SmartActivate.sdef */; };
+		2C2B982A10ACE644007C570A /* SmartActivate.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 2C863BB908FE6C1A00F73527 /* SmartActivate.sdef */; };
 		2C5859EA0BAFADE500D46AD8 /* Scripting.r in Rez */ = {isa = PBXBuildFile; fileRef = 2C863BCA08FE6CE200F73527 /* Scripting.r */; };
 		2C5859EB0BAFADE900D46AD8 /* Scripting.r in Rez */ = {isa = PBXBuildFile; fileRef = 2C863BCA08FE6CE200F73527 /* Scripting.r */; };
 		2C863AC908FE656300F73527 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0EB30908F2E32C0091C5CE /* ApplicationServices.framework */; };
@@ -376,6 +378,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C2B982A10ACE644007C570A /* SmartActivate.sdef in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +386,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C2B982610ACE63E007C570A /* SmartActivate.sdef in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
