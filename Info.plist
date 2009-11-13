@@ -7,11 +7,11 @@
 	<key>CFBundleExecutable</key>
 	<string>SmartActivate</string>
 	<key>CFBundleVersion</key>
-	<string>5</string>
+	<string>6</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1</string>
+	<string>1.1.1</string>
 	<key>CFBundleGetInfoString</key>
-	<string>1.1 copyright 2005-2009, Tetsuro KURITA</string>
+	<string>1.1.1 copyright 2005-2009, Tetsuro KURITA</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>copyright 2005-2009, Tetsuro KURITA</string>
 	<key>CFBundleIdentifier</key>
