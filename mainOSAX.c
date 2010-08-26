@@ -4,6 +4,10 @@
 #include <Carbon/Carbon.h>
 #include <ApplicationServices/ApplicationServices.h>
 
+#if MAC_OS_X_VERSION_MIN_REQUIRED < MAC_OS_X_VERSION_10_5
+typedef SInt32                          SRefCon;
+#endif
+
 #define useLog 0
 
 #define kSmartActivateSuite  'smAt'
@@ -63,24 +67,19 @@ int main(int argc, char *argv[])
 
 // =============================================================================
 
-OSErr MyEventHandler(const AppleEvent *ev, AppleEvent *reply, SRefCon refcon)
+OSErr activateProcessHandler(const AppleEvent *ev, AppleEvent *reply, SRefCon refcon)
 {
 #if useLog
-	NSLog(@"start MyEventHandler");
+	NSLog(@"start activateProcessHandler");
 #endif	
 	++gAdditionReferenceCount;  // increment the reference count first thing!
 	
 	OSErr resultCode = noErr;
 	OSErr err;
-
-	CFStringRef targetCreator = NULL;
-	CFStringRef targetName = NULL;
-	CFStringRef targetIdentifier = NULL;
 	
-	
-	err = getStringValue(ev, kCreatorParam, &targetCreator);	
-	err = getStringValue(ev, kBundleIDParam, &targetIdentifier);	
-	err = getStringValue(ev, keyDirectObject, &targetName);
+	CFStringRef targetCreator = CFStringCreateWithEvent(ev, kCreatorParam, &err);
+	CFStringRef targetIdentifier = CFStringCreateWithEvent(ev, kBundleIDParam, &err);
+	CFStringRef targetName = CFStringCreateWithEvent(ev, keyDirectObject, &err);
 	
 	Boolean isSuccess = 0;
 	CFDictionaryRef pdict = NULL;
@@ -112,7 +111,7 @@ bail:
 	safeRelease(pdict);
 	
 #if useLog
-	printf("end MyEventHandler\n");
+	printf("end activateProcessHandler\n");
 #endif
 	return resultCode;
 }
@@ -127,7 +126,7 @@ struct AEEventHandlerInfo {
 typedef struct AEEventHandlerInfo AEEventHandlerInfo;
 
 static const AEEventHandlerInfo gEventInfo[] = {
-	{ kSmartActivateSuite, kActivateProcessEvent, MyEventHandler }
+	{ kSmartActivateSuite, kActivateProcessEvent, activateProcessHandler }
 	// Add more suite/event/handler triplets here if you define more than one command.
 };
 #define kEventHandlerCount  (sizeof(gEventInfo) / sizeof(AEEventHandlerInfo))
