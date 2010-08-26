@@ -33,7 +33,7 @@
 		<key>Events</key>
 		<dict>
 			<key>smAtsmAt</key>
-			<string>MyEventHandler</string>
+			<string>activateProcessHandler</string>
 		</dict>
 	</dict>
 </dict>

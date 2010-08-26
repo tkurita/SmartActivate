@@ -35,7 +35,7 @@
 			<key>smAtsmAt</key>
 			<dict>
 				<key>Handler</key>
-				<string>MyEventHandler</string>
+				<string>activateProcessHandler</string>
 				<key>ThreadSafe</key>
 				<true/>
 				<key>Context</key>
