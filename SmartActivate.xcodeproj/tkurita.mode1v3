@@ -274,21 +274,19 @@
 								<string>2C1656C509F907C400CE5422</string>
 								<string>2C863BCC08FE6CEE00F73527</string>
 								<string>08FB7795FE84155DC02AAC07</string>
-								<string>C6859EA2029092E104C91782</string>
-								<string>08FB779DFE84155DC02AAC07</string>
+								<string>1AB674ADFE9D54B511CA2CBB</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>19</integer>
-									<integer>15</integer>
-									<integer>0</integer>
+									<integer>32</integer>
+									<integer>29</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {342, 669}}</string>
+							<string>{{0, 40}, {342, 669}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -309,7 +307,7 @@
 							<real>320</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>151 119 1141 728 0 0 1440 878 </string>
+						<string>151 142 1141 728 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -373,7 +371,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {777, 0}}</string>
 								<key>RubberWindowFrame</key>
-								<string>151 119 1141 728 0 0 1440 878 </string>
+								<string>151 142 1141 728 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -386,7 +384,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>main.m</string>
+								<string>activate.1</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -394,7 +392,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>main.m</string>
+										<string>activate.1</string>
+										<key>_historyCapacity</key>
+										<integer>0</integer>
+										<key>bookmark</key>
+										<string>2C19E6D91284514900C14DF1</string>
 										<key>history</key>
 										<array>
 											<string>2C864408095DA64C00E2C27E</string>
@@ -403,7 +405,6 @@
 											<string>2C5A4BCB107C776D00828B7D</string>
 											<string>2C5A4BCC107C776D00828B7D</string>
 											<string>2C5A4E23107D6E4400828B7D</string>
-											<string>2C880BD31083FE4B0042C049</string>
 											<string>2C9860E21084883B00F01509</string>
 											<string>2CE8294A1086E6F300E98A0C</string>
 											<string>2C33B2F01087260D00811ECC</string>
@@ -413,6 +414,9 @@
 											<string>2C749E4E12264DD100DD49B3</string>
 											<string>2C19E5F5128394C400C14DF1</string>
 											<string>2C19E5F6128394C400C14DF1</string>
+											<string>2C19E6CC1284504500C14DF1</string>
+											<string>2C19E6CD1284504500C14DF1</string>
+											<string>2C19E6CE1284504500C14DF1</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -435,6 +439,10 @@
 											<string>2C5A4BD1107C776D00828B7D</string>
 											<string>2C33B2F31087260D00811ECC</string>
 											<string>2CFB130610878DB70024AED6</string>
+											<string>2C19E6CF1284504500C14DF1</string>
+											<string>2C19E6D01284504500C14DF1</string>
+											<string>2C19E6D11284504500C14DF1</string>
+											<string>2C19E6D21284504500C14DF1</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -448,7 +456,7 @@
 								<key>Frame</key>
 								<string>{{0, 5}, {777, 675}}</string>
 								<key>RubberWindowFrame</key>
-								<string>151 119 1141 728 0 0 1440 878 </string>
+								<string>151 142 1141 728 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -468,7 +476,7 @@
 								<key>Frame</key>
 								<string>{{0, 685}, {777, 2}}</string>
 								<key>RubberWindowFrame</key>
-								<string>151 119 1141 728 0 0 1440 878 </string>
+								<string>151 142 1141 728 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -493,9 +501,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>2C19E62F1283973900C14DF1</string>
+				<string>2C19E6AF12844B3F00C14DF1</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>2C19E6301283973900C14DF1</string>
+				<string>2C19E6B012844B3F00C14DF1</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
@@ -628,12 +636,11 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>2C5A4BAD107C76A800828B7D</string>
 		<string>/Users/tkurita/Dev/Projects/SmartActivate/trunk/SmartActivate.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>151 119 1141 728 0 0 1440 878 </string>
+	<string>151 142 1141 728 0 0 1440 878 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -712,7 +719,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>2C5A4BAD107C76A800828B7D</string>
-				<string>2C19E6311283973900C14DF1</string>
+				<string>2C19E6B112844B3F00C14DF1</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>

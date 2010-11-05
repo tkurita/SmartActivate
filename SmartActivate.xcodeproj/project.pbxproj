@@ -1062,6 +1062,7 @@
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = SmartActivate;
+				PRODUCT_VERSION = 1.1.2;
 				SECTORDER_FLAGS = "";
 				SYMROOT = build_10_5;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1078,26 +1079,30 @@
 		2CB1DBC71084EEF0007CDBA3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				CURRENT_PROJECT_VERSION = 7;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SmartActivate_Prefix.pch;
 				INFOPLIST_FILE = Info_10_5.plist;
 				INSTALL_PATH = /Library/ScriptingAdditions;
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
-				"MACOSX_DEPLOYMENT_TARGET[sdk=macosx10.4][arch=i386]" = 10.4;
-				"MACOSX_DEPLOYMENT_TARGET[sdk=macosx10.4][arch=ppc]" = 10.4;
-				"MACOSX_DEPLOYMENT_TARGET[sdk=macosx10.5][arch=ppc64]" = 10.5;
-				"MACOSX_DEPLOYMENT_TARGET[sdk=macosx10.5][arch=x86_64]" = 10.5;
+				"MACOSX_DEPLOYMENT_TARGET[arch=i386]" = 10.4;
+				"MACOSX_DEPLOYMENT_TARGET[arch=ppc64]" = 10.5;
+				"MACOSX_DEPLOYMENT_TARGET[arch=ppc]" = 10.4;
+				"MACOSX_DEPLOYMENT_TARGET[arch=x86_64]" = 10.5;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = SmartActivate;
+				PRODUCT_VERSION = 1.1.2;
 				SECTORDER_FLAGS = "";
 				SYMROOT = build_10_5;
+				VALID_ARCHS = "i386 ppc ppc64 ppc970 x86_64";
 				VERSIONING_SYSTEM = "apple-generic";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1127,6 +1132,7 @@
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = SmartActivate;
+				PRODUCT_VERSION = 1.1.2;
 				SECTORDER_FLAGS = "";
 				SYMROOT = build_10_5;
 				VERSIONING_SYSTEM = "apple-generic";
