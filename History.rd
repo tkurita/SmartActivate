@@ -2,6 +2,10 @@
 activate コマンドで失敗した時、失敗理由を出力した方がいいだろう。
 終了ステータスもエラーの種類によって使い分ける。
 
+= 2010-11-06
+activate コマンドを 64 bit でコンパイルすると次のような warning がでる。でも、動くみたい。
+warning: passing argument 2 of ‘libiconv’ from incompatible pointer type
+
 = 2007-03-26
 SHIFT_JIS ではなく、SJIS でも動くみたい
 
@@ -18,7 +22,6 @@ LC_CTYPE を使うのがいいかも？
 
 [NSLocale currentLocale] は環境変数 LANG を反映しない。
 NSScriptCode とは何？ encoding とは違うようだ
-
 
 = 2007.03.20
 version 1.0.3
