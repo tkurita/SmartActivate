@@ -7,11 +7,11 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleVersion</key>
-	<string>7</string>
+	<string>9</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1.2</string>
+	<string>${PRODUCT_VERSION}</string>
 	<key>CFBundleGetInfoString</key>
-	<string>1.1.2 for 10.6 copyright 2005-2010, Tetsuro KURITA</string>
+	<string>${PRODUCT_VERSION} for 10.6 copyright 2005-2010, Tetsuro KURITA</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>for 10.6 copyright 2005-2010, Tetsuro KURITA</string>
 	<key>CFBundleIdentifier</key>
