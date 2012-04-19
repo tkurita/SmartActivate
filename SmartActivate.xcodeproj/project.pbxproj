@@ -35,21 +35,17 @@
 		2C863AC908FE656300F73527 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0EB30908F2E32C0091C5CE /* ApplicationServices.framework */; };
 		2C863ADC08FE66C300F73527 /* mainOSAX.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C863ADB08FE66C300F73527 /* mainOSAX.c */; };
 		2C863B9A08FE6A0400F73527 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C863B9908FE6A0400F73527 /* Carbon.framework */; };
-		2CB1DBB91084EEF0007CDBA3 /* AEUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CD2B1AA0B96C86000DD307C /* AEUtils.h */; };
 		2CB1DBBC1084EEF0007CDBA3 /* mainOSAX.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C863ADB08FE66C300F73527 /* mainOSAX.c */; };
 		2CB1DBBD1084EEF0007CDBA3 /* SmartActivate.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C1DAEC209F605B700139324 /* SmartActivate.c */; };
 		2CB1DBBE1084EEF0007CDBA3 /* AEUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2B1A90B96C86000DD307C /* AEUtils.c */; };
 		2CB1DBC01084EEF0007CDBA3 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0EB30908F2E32C0091C5CE /* ApplicationServices.framework */; };
 		2CB1DBC11084EEF0007CDBA3 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C863B9908FE6A0400F73527 /* Carbon.framework */; };
 		2CB1DBC41084EEF0007CDBA3 /* Scripting.r in Rez */ = {isa = PBXBuildFile; fileRef = 2C863BCA08FE6CE200F73527 /* Scripting.r */; };
-		2CB1DBD01084EFE2007CDBA3 /* SmartActivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C0EB20508F2CE6B0091C5CE /* SmartActivate.h */; };
-		2CB1DBD11084EFE4007CDBA3 /* SmartActivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C0EB20508F2CE6B0091C5CE /* SmartActivate.h */; };
 		2CC10B2A0912875C006C2EC7 /* SmartActivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0EB20608F2CE6B0091C5CE /* SmartActivate.m */; };
 		2CC10B4609128960006C2EC7 /* mainFindProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC10B18091282E2006C2EC7 /* mainFindProcess.m */; };
 		2CC10BB409128978006C2EC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
 		2CC10BB50912897C006C2EC7 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0EB30908F2E32C0091C5CE /* ApplicationServices.framework */; };
 		2CD2B1AB0B96C86000DD307C /* AEUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2B1A90B96C86000DD307C /* AEUtils.c */; };
-		2CD2B1AC0B96C86000DD307C /* AEUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CD2B1AA0B96C86000DD307C /* AEUtils.h */; };
 		2CD2B1AD0B96C86000DD307C /* AEUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2B1A90B96C86000DD307C /* AEUtils.c */; };
 		8DD76F9A0486AA7600D96B5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
@@ -264,8 +260,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CD2B1AC0B96C86000DD307C /* AEUtils.h in Headers */,
-				2CB1DBD01084EFE2007CDBA3 /* SmartActivate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +267,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CB1DBB91084EEF0007CDBA3 /* AEUtils.h in Headers */,
-				2CB1DBD11084EFE4007CDBA3 /* SmartActivate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +317,7 @@
 			buildConfigurationList = 2C494A6C0946E56C008820F6 /* Build configuration list for PBXNativeTarget "SmartActivate" */;
 			buildPhases = (
 				2C863AD408FE65A900F73527 /* Headers */,
+				2CC81877153FA1A500DCA187 /* ShellScript */,
 				2C863A2008FE639D00F73527 /* Resources */,
 				2C863A2108FE639D00F73527 /* Sources */,
 				2C863A2208FE639D00F73527 /* Frameworks */,
@@ -402,7 +395,14 @@
 			isa = PBXProject;
 			buildConfigurationList = 2C494A780946E56C008820F6 /* Build configuration list for PBXProject "SmartActivate" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 08FB7794FE84155DC02AAC07 /* smartActivate */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -562,6 +562,21 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/bin/sdp -f a -o ${SRCROOT}/Scripting.r SmartActivate.sdef";
 		};
+		2CC81877153FA1A500DCA187 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Info_10_5.plist",
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Info_10_5.plist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "plist=`cat \"${SCRIPT_INPUT_FILE_0}\"`\neval echo \\\"$plist\\\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -685,7 +700,7 @@
 			buildSettings = {
 				ARCHS = "$(NATIVE_ARCH)";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -714,19 +729,30 @@
 		2C494A6E0946E56C008820F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					ppc64,
+					ppc,
+					x86_64,
+					i386,
+				);
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SmartActivate_Prefix.pch;
+				GCC_VERSION = 4.2;
+				"GCC_VERSION[sdk=macosx10.4][arch=*]" = 4.0;
 				INFOPLIST_FILE = Info_10_6.plist;
 				INSTALL_PATH = /Library/ScriptingAdditions;
+				"MACOSX_DEPLOYMENT_TARGET[sdk=macosx10.4][arch=*]" = 10.4;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = SmartActivate;
+				"SDKROOT[arch=i386]" = macosx10.4;
+				"SDKROOT[arch=ppc]" = macosx10.4;
 				SECTORDER_FLAGS = "";
 				VERSIONING_SYSTEM = "apple-generic";
 				WARNING_CFLAGS = (
@@ -742,7 +768,7 @@
 		2C494A6F0946E56C008820F6 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SmartActivate_Prefix.pch;
@@ -777,6 +803,7 @@
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
 				INFOPLIST_FILE = "SmartActivateApp-Info.plist";
 				INSTALL_PATH = "$(USER_APPS_DIR)";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -931,6 +958,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				PREBINDING = NO;
+				PRODUCT_VERSION = 1.1.3;
 				SDKROOT = macosx10.5;
 			};
 			name = Release;
@@ -954,7 +982,7 @@
 			buildSettings = {
 				ARCHS = "$(NATIVE_ARCH)";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -987,12 +1015,13 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SmartActivate_Prefix.pch;
+				GCC_VERSION = 4.0;
 				INFOPLIST_FILE = Info_10_5.plist;
 				INSTALL_PATH = /Library/ScriptingAdditions;
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
@@ -1017,7 +1046,7 @@
 		2C749E2C12264C6200DD49B3 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SmartActivate_Prefix.pch;
@@ -1045,7 +1074,7 @@
 			buildSettings = {
 				ARCHS = "$(NATIVE_ARCH)";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -1083,13 +1112,15 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SmartActivate_Prefix.pch;
+				GCC_VERSION = 4.2;
+				"GCC_VERSION[sdk=macosx10.4][arch=*]" = 4.0;
 				INFOPLIST_FILE = Info_10_5.plist;
 				INSTALL_PATH = /Library/ScriptingAdditions;
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
@@ -1118,7 +1149,7 @@
 		2CB1DBC81084EEF0007CDBA3 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SmartActivate_Prefix.pch;

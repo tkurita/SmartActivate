@@ -41,6 +41,17 @@ resource 'aete' (0, "SmartActivate Terminology") {
 				"Bundle Identifer of the process",
 				optional,
 				singleItem, notEnumerated, Reserved13
+			},
+
+			"SmartActivate version",
+			"Get version number of SmartActivate",
+			'smAt', 'Vers',
+			'TEXT',
+			"version number",
+			replyRequired, singleItem, notEnumerated, Reserved13,
+			dp_none__,
+			{
+
 			}
 		},
 		{

@@ -10,8 +10,10 @@ typedef SInt32                          SRefCon;
 
 #define useLog 0
 
+#define BUNDLE_ID CFSTR("Scriptfactory.osax.SmartActivate")
 #define kSmartActivateSuite  'smAt'
 #define kActivateProcessEvent	'smAt'
+#define kGetVersionEvent	'Vers'
 #define kCreatorParam 'cTyp'
 #define kBundleIDParam 'buID'
 
@@ -66,6 +68,22 @@ int main(int argc, char *argv[])
 #endif
 
 // =============================================================================
+
+OSErr versionHandler(const AppleEvent *ev, AppleEvent *reply, SRefCon refcon)
+{
+#if useLog
+	fprintf(stderr, "start versionHandler\n");
+#endif			
+	gAdditionReferenceCount++;
+	OSErr err;
+	CFBundleRef	bundle = CFBundleGetBundleWithIdentifier(BUNDLE_ID);
+	CFDictionaryRef info = CFBundleGetInfoDictionary(bundle);
+	
+	CFStringRef vers = CFDictionaryGetValue(info, CFSTR("CFBundleShortVersionString"));
+	err = putStringToEvent(reply, keyAEResult, vers, kCFStringEncodingUnicode);
+	gAdditionReferenceCount--;
+	return err;
+}
 
 OSErr activateProcessHandler(const AppleEvent *ev, AppleEvent *reply, SRefCon refcon)
 {
@@ -126,7 +144,8 @@ struct AEEventHandlerInfo {
 typedef struct AEEventHandlerInfo AEEventHandlerInfo;
 
 static const AEEventHandlerInfo gEventInfo[] = {
-	{ kSmartActivateSuite, kActivateProcessEvent, activateProcessHandler }
+	{ kSmartActivateSuite, kActivateProcessEvent, activateProcessHandler },
+	{ kSmartActivateSuite, kGetVersionEvent, versionHandler }
 	// Add more suite/event/handler triplets here if you define more than one command.
 };
 #define kEventHandlerCount  (sizeof(gEventInfo) / sizeof(AEEventHandlerInfo))

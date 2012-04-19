@@ -8,5 +8,8 @@
 			<parameter name="identifier" code="buID" description="Bundle Identifer of the process" type="text" optional="yes"/>
 			<result description="true if successed to activate specified process." type="boolean"/>
 		</command>
+		<command name="SmartActivate version" code="smAtVers" description="Get version number of SmartActivate">
+			<result description="version number" type="text"/>
+		</command>
 	</suite>
 </dictionary>
