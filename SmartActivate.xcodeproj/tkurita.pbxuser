@@ -154,7 +154,7 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 356495635;
+			PBXPerProjectTemplateStateSaveDate = 356504272;
 			PBXPrepackagedSmartGroups_v2 = (
 				{
 					PBXTransientLocationAtTop = bottom;
@@ -331,9 +331,12 @@
 					};
 				},
 			);
-			PBXWorkspaceStateSaveDate = 356495635;
+			PBXWorkspaceStateSaveDate = 356504272;
 		};
 		perUserProjectItems = {
+			2C02E619153FCF6000A4DE10 = 2C02E619153FCF6000A4DE10 /* PlistBookmark */;
+			2C02E61A153FCF6000A4DE10 = 2C02E61A153FCF6000A4DE10 /* PlistBookmark */;
+			2C02E61B153FCF6000A4DE10 = 2C02E61B153FCF6000A4DE10 /* PlistBookmark */;
 			2C2844AA0B24927500930DCD = 2C2844AA0B24927500930DCD /* PBXTextBookmark */;
 			2C864408095DA64C00E2C27E = 2C864408095DA64C00E2C27E /* PBXTextBookmark */;
 			2CC8187C153FA1F900DCA187 = 2CC8187C153FA1F900DCA187 /* PBXTextBookmark */;
@@ -358,6 +361,46 @@
 			sepNavVisRect = "{{0, 0}, {0, 0}}";
 			sepNavWindowFrame = "{{78, 159}, {899, 719}}";
 		};
+	};
+	2C02E619153FCF6000A4DE10 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 2CB1DBCA1084EEF0007CDBA3 /* Info_10_5.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			OSAXHandlers,
+			Events,
+			smAtVers,
+		);
+		name = /Users/tkurita/Dev/Projects/SmartActivate/trunk/Info_10_5.plist;
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	2C02E61A153FCF6000A4DE10 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 2C863A2508FE639D00F73527 /* Info_10_6.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundlePackageType,
+		);
+		name = /Users/tkurita/Dev/Projects/SmartActivate/trunk/Info_10_6.plist;
+		rLen = 4;
+		rLoc = 0;
+	};
+	2C02E61B153FCF6000A4DE10 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 2C863A2508FE639D00F73527 /* Info_10_6.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			OSAXHandlers,
+			Events,
+			smAtVers,
+		);
+		name = /Users/tkurita/Dev/Projects/SmartActivate/trunk/Info_10_6.plist;
+		rLen = 0;
+		rLoc = 9223372036854775808;
 	};
 	2C0EB1FF08F2CE0F0091C5CE /* activate */ = {
 		isa = PBXExecutable;

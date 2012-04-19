@@ -32,6 +32,15 @@
 	<dict>
 		<key>Events</key>
 		<dict>
+			<key>smAtVers</key>
+			<dict>
+				<key>Handler</key>
+				<string>versionHandler</string>
+				<key>ThreadSafe</key>
+				<true/>
+				<key>Context</key>
+				<string>Process</string>
+			</dict>
 			<key>smAtsmAt</key>
 			<dict>
 				<key>Handler</key>

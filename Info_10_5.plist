@@ -34,6 +34,8 @@
 		<dict>
 			<key>smAtsmAt</key>
 			<string>activateProcessHandler</string>
+			<key>smAtVers</key>
+			<string>versionHandler</string>
 		</dict>
 	</dict>
 </dict>
