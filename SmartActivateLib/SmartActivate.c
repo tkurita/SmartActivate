@@ -79,11 +79,11 @@ CFDictionaryRef getProcessInfo(CFStringRef targetCreator, CFStringRef targetName
 #if useLog	
 		printf("getProcessInfo found PSN high:%d, low:%d \n", psn.highLongOfPSN, psn.lowLongOfPSN);
 #endif
-		CFMutableDictionaryRef p_dict_psn = CFDictionaryCreateMutableCopy (NULL, 0, pDict);
+        CFMutableDictionaryRef p_dict_psn = CFDictionaryCreateMutableCopy (NULL, 0, pDict);
 		CFDictionaryAddValue(p_dict_psn, CFSTR("PSNLow"), 
-									CFNumberCreate(NULL, kCFNumberLongType, &(psn.lowLongOfPSN)));
+									CFNumberCreate(NULL, kCFNumberSInt32Type, &(psn.lowLongOfPSN)));
 		CFDictionaryAddValue(p_dict_psn, CFSTR("PSNHigh"), 
-									CFNumberCreate(NULL, kCFNumberLongType, &(psn.highLongOfPSN)));
+									CFNumberCreate(NULL, kCFNumberSInt32Type, &(psn.highLongOfPSN)));
 		CFRelease(pDict);
 		return p_dict_psn;
 	}
@@ -94,8 +94,8 @@ CFDictionaryRef getProcessInfo(CFStringRef targetCreator, CFStringRef targetName
 
 ProcessSerialNumber getPSNFromDict(CFDictionaryRef pDict) {
 	ProcessSerialNumber psn;
-	CFNumberGetValue(CFDictionaryGetValue(pDict,CFSTR("PSNLow")),kCFNumberLongType,&(psn.lowLongOfPSN));
-	CFNumberGetValue(CFDictionaryGetValue(pDict,CFSTR("PSNHigh")),kCFNumberLongType,&(psn.highLongOfPSN));
+	CFNumberGetValue(CFDictionaryGetValue(pDict,CFSTR("PSNLow")),kCFNumberSInt32Type,&(psn.lowLongOfPSN));
+	CFNumberGetValue(CFDictionaryGetValue(pDict,CFSTR("PSNHigh")),kCFNumberSInt32Type,&(psn.highLongOfPSN));
 	return psn;
 }
 
