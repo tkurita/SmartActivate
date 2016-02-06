@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -79,7 +79,7 @@
 		2C863A2508FE639D00F73527 /* Info_10_6.plist */ = {isa = PBXFileReference; explicitFileType = text.plist; fileEncoding = 4; path = Info_10_6.plist; sourceTree = "<group>"; };
 		2C863ADB08FE66C300F73527 /* mainOSAX.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mainOSAX.c; sourceTree = "<group>"; };
 		2C863B9908FE6A0400F73527 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
-		2C863BB908FE6C1A00F73527 /* SmartActivate.sdef */ = {isa = PBXFileReference; explicitFileType = text.sdef; fileEncoding = 4; path = SmartActivate.sdef; sourceTree = "<group>"; };
+		2C863BB908FE6C1A00F73527 /* SmartActivate.sdef */ = {isa = PBXFileReference; explicitFileType = text.sdef; fileEncoding = 4; lastKnownFileType = file; path = SmartActivate.sdef; sourceTree = "<group>"; };
 		2C863BCA08FE6CE200F73527 /* Scripting.r */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.rez; path = Scripting.r; sourceTree = "<group>"; };
 		2CB1DBC91084EEF0007CDBA3 /* SmartActivate.osax */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartActivate.osax; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB1DBCA1084EEF0007CDBA3 /* Info_10_5.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info_10_5.plist; sourceTree = "<group>"; };
@@ -390,7 +390,7 @@
 		08FB7793FE84155DC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = 2C494A780946E56C008820F6 /* Build configuration list for PBXProject "SmartActivate" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -694,13 +694,11 @@
 		2C494A6D0946E56C008820F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH)";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 11;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SmartActivate_Prefix.pch;
@@ -718,19 +716,12 @@
 					"-Wno-unknown-pragmas",
 				);
 				WRAPPER_EXTENSION = osax;
-				ZERO_LINK = YES;
 			};
 			name = Debug;
 		};
 		2C494A6E0946E56C008820F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc64,
-					ppc,
-					x86_64,
-					i386,
-				);
 				COPY_PHASE_STRIP = YES;
 				CURRENT_PROJECT_VERSION = 11;
 				GCC_C_LANGUAGE_STANDARD = c99;
@@ -738,17 +729,12 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SmartActivate_Prefix.pch;
-				GCC_VERSION = 4.2;
-				"GCC_VERSION[sdk=macosx10.4][arch=*]" = 4.0;
 				INFOPLIST_FILE = Info_10_6.plist;
 				INSTALL_PATH = /Library/ScriptingAdditions;
-				"MACOSX_DEPLOYMENT_TARGET[sdk=macosx10.4][arch=*]" = 10.4;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = SmartActivate;
-				"SDKROOT[arch=i386]" = macosx10.4;
-				"SDKROOT[arch=ppc]" = macosx10.4;
 				SECTORDER_FLAGS = "";
 				VERSIONING_SYSTEM = "apple-generic";
 				WARNING_CFLAGS = (
@@ -757,7 +743,6 @@
 					"-Wno-unknown-pragmas",
 				);
 				WRAPPER_EXTENSION = osax;
-				ZERO_LINK = NO;
 			};
 			name = Release;
 		};
@@ -936,17 +921,12 @@
 		2C494A790946E56C008820F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_ENABLE_OBJC_GC = supported;
-				"GCC_VERSION[sdk=macosx10.4][arch=*]" = 4.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
-				PREBINDING = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_VERSION = 1.1.4;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx10.8;
 			};
 			name = Debug;
 		};
@@ -956,28 +936,21 @@
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_ENABLE_OBJC_GC = supported;
-				"GCC_VERSION[sdk=macosx10.4][arch=*]" = 4.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.5;
-				PREBINDING = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_VERSION = 1.1.4;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx10.8;
 			};
 			name = Release;
 		};
 		2C494A7B0946E56C008820F6 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_ENABLE_OBJC_GC = supported;
-				"GCC_VERSION[sdk=macosx10.4][arch=*]" = 4.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
-				PREBINDING = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_VERSION = 1.1.4;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx10.8;
 			};
 			name = Default;
 		};

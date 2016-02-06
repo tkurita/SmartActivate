@@ -4,7 +4,7 @@
 		activeArchitecturePreference = x86_64;
 		activeBuildConfigurationName = Release;
 		activeExecutable = 2CAE9130158651910053FFF8 /* activate */;
-		activeTarget = 2C863A2308FE639D00F73527 /* SmartActivate */;
+		activeTarget = 8DD76F960486AA7600D96B5E /* activate */;
 		codeSenseManager = 2CAE9147158651B00053FFF8 /* Code sense */;
 		executables = (
 			2CAE9130158651910053FFF8 /* activate */,
@@ -17,7 +17,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					611,
+					364,
 					20,
 					48,
 					43,
@@ -56,16 +56,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 476426816;
-			PBXWorkspaceStateSaveDate = 476426816;
-		};
-		perUserProjectItems = {
-			2CEC20541C65B09700B72623 /* PBXTextBookmark */ = 2CEC20541C65B09700B72623 /* PBXTextBookmark */;
-			2CEC20561C65B09700B72623 /* PBXTextBookmark */ = 2CEC20561C65B09700B72623 /* PBXTextBookmark */;
-			2CEC20571C65B09700B72623 /* PBXBookmark */ = 2CEC20571C65B09700B72623 /* PBXBookmark */;
-			2CEC20841C65C86E00B72623 /* PlistBookmark */ = 2CEC20841C65C86E00B72623 /* PlistBookmark */;
-			2CEC20851C65C86E00B72623 /* PlistBookmark */ = 2CEC20851C65C86E00B72623 /* PlistBookmark */;
-			2CEC20861C65C86E00B72623 /* PlistBookmark */ = 2CEC20861C65C86E00B72623 /* PlistBookmark */;
+			PBXPerProjectTemplateStateSaveDate = 476432614;
+			PBXWorkspaceStateSaveDate = 476432614;
 		};
 		sourceControlManager = 2CAE9146158651B00053FFF8 /* Source Control */;
 		userBuildSettings = {
@@ -214,72 +206,6 @@
 			sepNavSelRange = "{438, 0}";
 			sepNavVisRange = "{0, 1249}";
 		};
-	};
-	2CEC20541C65B09700B72623 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 2CEC20551C65B09700B72623 /* iconv.h */;
-		name = "iconv.h: 72";
-		rLen = 30;
-		rLoc = 2852;
-		rType = 0;
-		vrLen = 945;
-		vrLoc = 2006;
-	};
-	2CEC20551C65B09700B72623 /* iconv.h */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.c.h;
-		name = iconv.h;
-		path = /Developer/SDKs/MacOSX10.5.sdk/usr/include/iconv.h;
-		sourceTree = "<absolute>";
-	};
-	2CEC20561C65B09700B72623 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 2C0EB20508F2CE6B0091C5CE /* SmartActivate.h */;
-		name = "SmartActivate.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1013;
-		vrLoc = 0;
-	};
-	2CEC20571C65B09700B72623 /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = 2CD2B1AA0B96C86000DD307C /* AEUtils.h */;
-	};
-	2CEC20841C65C86E00B72623 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 2C863A2508FE639D00F73527 /* Info_10_6.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-			CFBundlePackageType,
-		);
-		name = /Users/tkurita/Dev/Projects/SmartActivate/trunk/Info_10_6.plist;
-		rLen = 0;
-		rLoc = 9223372036854775807;
-	};
-	2CEC20851C65C86E00B72623 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 2CB1DBCA1084EEF0007CDBA3 /* Info_10_5.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = /Users/tkurita/Dev/Projects/SmartActivate/trunk/Info_10_5.plist;
-		rLen = 0;
-		rLoc = 9223372036854775807;
-	};
-	2CEC20861C65C86E00B72623 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 2CB1DBCA1084EEF0007CDBA3 /* Info_10_5.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-			CFBundleIdentifier,
-		);
-		name = /Users/tkurita/Dev/Projects/SmartActivate/trunk/Info_10_5.plist;
-		rLen = 0;
-		rLoc = 9223372036854775807;
 	};
 	32A70AAB03705E1F00C91783 /* SmartActivate_Prefix.pch */ = {
 		uiCtxt = {
