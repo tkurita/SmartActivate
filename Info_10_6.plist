@@ -11,9 +11,9 @@
 	<key>CFBundleShortVersionString</key>
 	<string>${PRODUCT_VERSION}</string>
 	<key>CFBundleGetInfoString</key>
-	<string>${PRODUCT_VERSION} for 10.6 copyright 2005-2016, Tetsuro KURITA</string>
+	<string>${PRODUCT_VERSION} for 10.6 or later copyright 2005-2016, Tetsuro KURITA</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>for 10.6 copyright 2005-2012, Tetsuro KURITA</string>
+	<string>for 10.6 or later copyright 2005-2016, Tetsuro KURITA</string>
 	<key>CFBundleIdentifier</key>
 	<string>Scriptfactory.osax.SmartActivate</string>
 	<key>CFBundleInfoDictionaryVersion</key>

@@ -17,7 +17,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					611,
+					364,
 					20,
 					48,
 					43,
@@ -39,7 +39,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					571,
+					324,
 					60,
 					20,
 					48,
@@ -56,16 +56,16 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 476426816;
-			PBXWorkspaceStateSaveDate = 476426816;
+			PBXPerProjectTemplateStateSaveDate = 476450381;
+			PBXWorkspaceStateSaveDate = 476450381;
 		};
 		perUserProjectItems = {
-			2CEC20541C65B09700B72623 /* PBXTextBookmark */ = 2CEC20541C65B09700B72623 /* PBXTextBookmark */;
-			2CEC20561C65B09700B72623 /* PBXTextBookmark */ = 2CEC20561C65B09700B72623 /* PBXTextBookmark */;
-			2CEC20571C65B09700B72623 /* PBXBookmark */ = 2CEC20571C65B09700B72623 /* PBXBookmark */;
-			2CEC20841C65C86E00B72623 /* PlistBookmark */ = 2CEC20841C65C86E00B72623 /* PlistBookmark */;
-			2CEC20851C65C86E00B72623 /* PlistBookmark */ = 2CEC20851C65C86E00B72623 /* PlistBookmark */;
-			2CEC20861C65C86E00B72623 /* PlistBookmark */ = 2CEC20861C65C86E00B72623 /* PlistBookmark */;
+			2CEC20541C65B09700B72623 = 2CEC20541C65B09700B72623 /* PBXTextBookmark */;
+			2CEC20561C65B09700B72623 = 2CEC20561C65B09700B72623 /* PBXTextBookmark */;
+			2CEC20571C65B09700B72623 = 2CEC20571C65B09700B72623 /* PBXBookmark */;
+			2CEC20841C65C86E00B72623 = 2CEC20841C65C86E00B72623 /* PlistBookmark */;
+			2CEC20851C65C86E00B72623 = 2CEC20851C65C86E00B72623 /* PlistBookmark */;
+			2CEC20861C65C86E00B72623 = 2CEC20861C65C86E00B72623 /* PlistBookmark */;
 		};
 		sourceControlManager = 2CAE9146158651B00053FFF8 /* Source Control */;
 		userBuildSettings = {
@@ -256,7 +256,7 @@
 		);
 		name = /Users/tkurita/Dev/Projects/SmartActivate/trunk/Info_10_6.plist;
 		rLen = 0;
-		rLoc = 9223372036854775807;
+		rLoc = 9223372036854775808;
 	};
 	2CEC20851C65C86E00B72623 /* PlistBookmark */ = {
 		isa = PlistBookmark;
@@ -267,7 +267,7 @@
 		);
 		name = /Users/tkurita/Dev/Projects/SmartActivate/trunk/Info_10_5.plist;
 		rLen = 0;
-		rLoc = 9223372036854775807;
+		rLoc = 9223372036854775808;
 	};
 	2CEC20861C65C86E00B72623 /* PlistBookmark */ = {
 		isa = PlistBookmark;
@@ -279,7 +279,7 @@
 		);
 		name = /Users/tkurita/Dev/Projects/SmartActivate/trunk/Info_10_5.plist;
 		rLen = 0;
-		rLoc = 9223372036854775807;
+		rLoc = 9223372036854775808;
 	};
 	32A70AAB03705E1F00C91783 /* SmartActivate_Prefix.pch */ = {
 		uiCtxt = {

@@ -1043,7 +1043,6 @@
 					"-Wno-unknown-pragmas",
 				);
 				WRAPPER_EXTENSION = osax;
-				ZERO_LINK = NO;
 			};
 			name = Release;
 		};
@@ -1133,7 +1132,6 @@
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = SmartActivate;
-				PRODUCT_VERSION = 1.1.2;
 				"SDKROOT[arch=i386]" = macosx10.4;
 				"SDKROOT[arch=ppc]" = macosx10.4;
 				SECTORDER_FLAGS = "";
@@ -1146,7 +1144,6 @@
 					"-Wno-unknown-pragmas",
 				);
 				WRAPPER_EXTENSION = osax;
-				ZERO_LINK = NO;
 			};
 			name = Release;
 		};
